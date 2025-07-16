@@ -78,8 +78,8 @@ main {
   .about {
     display: flex;
     height: 100vh;
-    padding-bottom: 32vh;
-    padding-right: 40px;
+    padding-bottom: 28vh;
+    padding-right: 80px;
     @media screen and (max-width: $mobileW) {
       height: auto;
       padding: 5vh 50px;
@@ -140,7 +140,7 @@ main {
   flex-wrap: wrap;
   justify-content: center;
   a {
-    margin-bottom: .5em;
+    margin: .2em;
   }
   li {
     i {

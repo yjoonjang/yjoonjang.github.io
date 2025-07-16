@@ -1,222 +1,85 @@
-# plainwhite
+## **About**
+Hello, I am a Master's student in [NLP&AI Lab.](http://nlp.korea.ac.kr/) advised by Prof. [Heuiseok Lim](https://scholar.google.com/citations?user=HMTkz7oAAAAJ&hl=en) in the Department of Computer Science and Engineering at [Korea University](https://www.korea.edu/mbshome/mbs/en/index.do). I received the B.S degree from Hongik University with majors in Mechanical Engineering and Computer Science. I am studying Natural Language Processing, focusing on Information Retrieval (IR) and Retrieval-Augmented Generation (RAG) systems. I aim to make AI models more beneficial to humans and society.
+ 
 
-Simplistic jekyll portfolio-style theme for writers.
+ 
 
-**Demo**: [samarsault.com](https://samarsault.com)
+## **Education**
+M.S. in Computer Science and Engineering, Korea University  
+_Mar. 2025 - Current_
 
-![plainwhite theme preview](/screenshot.png)
+B.S. in Mechanical Engineering and Computer Science, Hongik University  
+_Mar. 2020 - Feb. 2025_
 
-## Installation on Github Pages
+ 
 
-Add this line to your site's `_config.yml`:
+## **Papers**
+[**Improving Korean-English Cross-Lingual Retrieval: A Data-Centric Study of Language Composition and Model Merging**](https://arxiv.org/abs/2507.08480)  
+**Youngjoon Jang**, Junyoung Son, Taemin Lee, Seongtae Hong, Heuiseok Lim  
+_ArXiv_
 
-```yaml
-remote_theme: samarsault/plainwhite-jekyll
-```
+[**From Ambiguity to Accuracy: The Transformative Effect of Coreference Resolution on Retrieval-Augmented Generation systems**](https://arxiv.org/abs/2507.07847)  
+**Youngjoon Jang**, Seongtae Hong, Junyoung Son, Sungjin Park, Chanjun Park, Heuiseok Lim  
+_ACL 2025 SRW_
 
-## Installation
+[**Where am I? Large Language Models Wandering between Semantics and Structures in Long Contexts**](https://aclanthology.org/2024.emnlp-main.783/)  
+Seonmin Koo, Jinsung Kim, **Youngjoon Jang**, Chanjun Park, Heuiseok Lim  
+_EMNLP 2024_
 
-Add this line to your Jekyll site's `Gemfile`:
+[**Building Korean Embedding Benchmarks with Large Language Models**](https://koreascience.kr/article/CFKO202404272002852.page)  
+Junyoung Son, **Youngjoon Jang**, Soonwoo Choi, Byeonggoo Lee, Taemin Lee, Heuiseok Lim  
+_Annual Conference on Human & Cognitive Language Technology (HCLT) 2024_
 
-```ruby
-gem "plainwhite"
-```
+[**KoE5: A New Dataset and Model for Improving Korean Embedding Performance**](https://koreascience.kr/article/CFKO202404272001146.page)  
+**Youngjoon Jang**, Junyoung Son, Chanjun Park, Soonwoo Choi, Byeonggoo Lee, Taemin Lee, Heuiseok Lim  
+_Annual Conference on Human & Cognitive Language Technology (HCLT) 2024_
 
-And add this line to your Jekyll site's `_config.yml`:
+ 
 
-```yaml
-theme: plainwhite
-```
+## **Projects**
+**KULLM DeepResearch Project**     
+Built a Search pipeline in open DeepResearch project.  
+_2025 - Current_
 
-And then execute:
+[**KURE Project**](https://github.com/nlpai-lab/KURE)  
+Trained a SOTA Korean retrieval embedding model and built a evaluation framework for Korean embedding models.  
+_2024 - Current_
 
-    $ bundle
+**KT-Korea University Collaborative Research**  
+Trained a Korean legal domain LLM with Korean legal alignment data.  
+_2024 - 2025_
 
-Or install it yourself as:
+[**Pre:Ranker Project**](https://github.com/yjoonjang/PreRanker)  
+Trained a reranker to reduce the scope of available tools based on a given query.  
+_2024 - 2025_
 
-    $ gem install plainwhite
+**URACLE-Korea University Collaborative Research**  
+Trained English-Korean cross-lingual retrieval embedding model. [[Paper](https://arxiv.org/abs/2507.08480)]  
+_2024 - 2025_
 
-## Usage
+ 
 
-The "plainwhite" key in \_config.yml is used to customize the theme data.
+## **Open-source Contributions**
+[**sentence-transformers**](https://github.com/UKPLab/sentence-transformers)  
+- Contributed to the sentence-transformers library to support ListMLE, PListMLE Loss on Rerankers. [[Link](https://github.com/tomaarsen/sentence-transformers/pull/6)] 
 
-```yaml
-plainwhite:
-  name: Adam Denisov
-  tagline: Developer. Designer
-  date_format: "%b %-d, %Y"
+[**Massive Text Embedding Benchmark (MTEB)**](https://github.com/embeddings-benchmark/mteb)  
+- Contributed to the MTEB library with Korean retrieval evaluation datasets. [[Link](https://github.com/embeddings-benchmark/mteb/pull/1388)]  
+- Added long context support for OpenAI embedding models. [[Link](https://github.com/embeddings-benchmark/mteb/pull/1526)]  
+- Added support for loading jasper model in bf16 precision. [[Link](https://github.com/embeddings-benchmark/mteb/pull/2481)]  
 
-  social_links:
-    twitter: samarsault
-    github: samarsault
-    linkedIn: in/samarsault # format: locale/username
-```
+[**FlagEmbedding**](https://github.com/FlagOpen/FlagEmbedding)  
+- Contributed to the FlagEmbedding library fixing a bug related to knowledge distillation when training. [[Link](https://github.com/FlagOpen/FlagEmbedding/issues/1170)]  
 
-**Updating Placeholder Image**
+ 
 
-The placeholder portfolio image can be replaced by the desired image by placing it as `assets/portfolio.png` in your jekyll website, or by changing the following line in `_config.yaml`
+ 
 
-```yaml
-plainwhite:
-  portfolio_image:  "assets/portfolio.png" # the path from the base directory of the site to the image to display (no / at the start)
-```
+ 
 
-To use a different image for dark mode, e.g. with different colors that work better in dark mode, add a `portfolio_image_dark` entry in addition to the `portfolio_image`.
+ 
 
-```yaml
-plainwhite:
-  portfolio_image:      "assets/portfolio.png"
-  portfolio_image_dark: "assets/portfolio_dark.png"
-```
+ 
 
-**Comments (Disqus)**
 
-Comments on posts can be enabled by specifying your disqus_shortname under plainwhite in `_config.yml`. For example,
 
-```yaml
-plainwhite:
-  disqus_shortname: games
-```
-
-**Google Analytics**
-
-It can be enabled by specifying your analytics id under plainwhite in `_config.yml`
-
-```yaml
-plainwhite:
-  analytics_id: "< YOUR ID >"
-```
-
-**Sitemap**
-
-It can be toggled by the following line to under plainwhite in `_config.yml`
-
-```yaml
-plainwhite:
-  sitemap: true
-```
-
-**Excerpts**
-
-Excerpts can be enabled by adding the following line to your `_config.yml`
-
-```yaml
-show_excerpts: true
-```
-
-**Layouts**
-
-- Home
-- Page
-- Post
-
-**Navigation**
-
-Navigation can be enabled by adding the following line to your `_config.yml`
-
-```yaml
-plainwhite:
-  navigation:
-    - title: My Work
-      url: "/my-work"
-    - title: Resume
-      url: "/resume"
-```
-
-**Mobile**
-
-By default, Plainwhite places the sidebar (logo, name, tagline etc.) above the content on mobile (narrow screens).
-To condense it (moving some things to the bottom of the page and making the rest smaller) so it takes up less space, add the following to your `_config.yml`:
-
-```yaml
-plainwhite:
-  condensed_mobile:
-    - home
-    - post
-    - page
-```
-
-This chooses which layouts (types of page) should be condensed on mobile screens. E.g. if you want everything but the landing page to be condensed, remove `home` from the list. This option does not affect rendering on wider screens.
-
-**Dark mode**
-
-Dark mode can be enabled by setting the `dark_mode` flag in your `_config.yml`
-
-The website will check the OS preferred color scheme and set the theme accordingly, the preference will then be saved in a cookie
-
-```yaml
-plainwhite:
-  dark_mode: true
-```
-
-![plainwhite dark theme previe](/dark.png)
-
-**Multiline tagline**
-
-Tagline can be multiline in this way
-
-```yaml
-plainwhite:
-  tagline: |
-  First Line. 
-
-  Second Line. 
-
-  Third Line.
-```
-
-**Search-bar**
-
-Search-bar can be enabled by adding the following line to `config.yml`
-
-```yaml
-plainwhite:
-  search: true
-```
-
-Search is powered by [Simple-Jekyll-Search](https://github.com/christian-fei/Simple-Jekyll-Search) Jekyll plugin. A `search.json` containing post meta and contents will be generated in site root folder. Plugin JavaScript will then match for posts based on user input. More info and `search.json` customization documentation can be found in plugin repository.
-
-**Base URL**
-
-You can specify a custom base URL (eg. example.com/blog/) by adding the following line to `_config.yaml`. Note that there is no trailing slash on the URL.
-
-```yaml
-baseurl: "/blog"
-```
-
-**Language**
-
-You can set the `lang` attribute of the `<html>` tag on your pages by changing the following line in `_config.yml`:
-
-```yaml
-plainwhite:
-  html_lang: "en"
-```
-
-[See here for a full list of available language codes](https://www.w3schools.com/tags/ref_country_codes.asp)
-
-## Contributing
-
-Bug reports and pull requests are welcome on GitHub at https://github.com/samarsault/plainwhite-jekyll. This project is intended to be a safe, welcoming space for collaboration, and contributors are expected to adhere to the [Contributor Covenant](http://contributor-covenant.org) code of conduct.
-
-## Development
-
-To set up your environment to develop this theme, run `bundle install`.
-
-Your theme is setup just like a normal Jekyll site! To test your theme, run `bundle exec jekyll serve` and open your browser at `http://localhost:4000`. This starts a Jekyll server using your theme. Add pages, documents, data, etc. like normal to test your theme's contents. As you make modifications to your theme and to your content, your site will regenerate and you should see the changes in the browser after a refresh, just like normal.
-
-When your theme is released, only the files in `_layouts`, `_includes`, `_sass` and `assets` tracked with Git will be bundled.
-To add a custom directory to your theme-gem, please edit the regexp in `plainwhite.gemspec` accordingly.
-
-## Donation
-If this project help you reduce time to develop, you can give me a cup of coffee :) 
-
-[![paypal](https://www.paypalobjects.com/en_US/i/btn/btn_donateCC_LG.gif)](https://paypal.me/thelehhman)
-
-## License
-
-The theme is available as open source under the terms of the [MIT License](https://opensource.org/licenses/MIT).
-
-## More themes
-
-- [Texture](https://github.com/samarsault/texture)

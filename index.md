@@ -2,7 +2,15 @@
 layout: home
 ---
 
+ 
 
+ 
+
+ 
+
+ 
+
+ 
 
 ## **About**
 Hello, I am a Master's student in [NLP&AI Lab.](http://nlp.korea.ac.kr/) advised by Prof. [Heuiseok Lim](https://scholar.google.com/citations?user=HMTkz7oAAAAJ&hl=en) in the Department of Computer Science and Engineering at [Korea University](https://www.korea.edu/mbshome/mbs/en/index.do). I received the B.S degree from Hongik University with majors in Mechanical Engineering and Computer Science. I am studying Natural Language Processing, focusing on Information Retrieval (IR) and Retrieval-Augmented Generation (RAG) systems. I aim to make AI models more beneficial to humans and society.

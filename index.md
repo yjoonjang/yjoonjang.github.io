@@ -75,16 +75,3 @@ _2024 - 2025_
 
 [**FlagEmbedding**](https://github.com/FlagOpen/FlagEmbedding)  
 - Contributed to the FlagEmbedding library fixing a bug related to knowledge distillation when training. [[Link](https://github.com/FlagOpen/FlagEmbedding/issues/1170)]  
-
- 
-
- 
-
- 
-
- 
-
- 
-
-
-

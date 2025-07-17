@@ -2,15 +2,6 @@
 layout: home
 ---
 
- 
-
- 
-
- 
-
- 
-
- 
 
 ## **About**
 Hello, I am a Master's student in [NLP&AI Lab.](http://nlp.korea.ac.kr/) advised by Prof. [Heuiseok Lim](https://scholar.google.com/citations?user=HMTkz7oAAAAJ&hl=en) in the Department of Computer Science and Engineering at [Korea University](https://www.korea.edu/mbshome/mbs/en/index.do). I received the B.S degree from Hongik University with majors in Mechanical Engineering and Computer Science. I am studying Natural Language Processing, focusing on Information Retrieval (IR) and Retrieval-Augmented Generation (RAG) systems. I aim to make AI models more beneficial to humans and society.
@@ -80,7 +71,7 @@ _2024 - 2025_
 [**Massive Text Embedding Benchmark (MTEB)**](https://github.com/embeddings-benchmark/mteb)  
 - Contributed to the MTEB library with Korean retrieval evaluation datasets. [[Link](https://github.com/embeddings-benchmark/mteb/pull/1388)]  
 - Added long context support for OpenAI embedding models. [[Link](https://github.com/embeddings-benchmark/mteb/pull/1526)]  
-- Added support for loading jasper model in bf16 precision. [[Link](https://github.com/embeddings-benchmark/mteb/pull/2481)]  
+- Added support for loading jasper model in bf16 precision. [[Link](https://github.com/embeddings-benchmark/mteb/issues/2474)]  
 
 [**FlagEmbedding**](https://github.com/FlagOpen/FlagEmbedding)  
 - Contributed to the FlagEmbedding library fixing a bug related to knowledge distillation when training. [[Link](https://github.com/FlagOpen/FlagEmbedding/issues/1170)]  

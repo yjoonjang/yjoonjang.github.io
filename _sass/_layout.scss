@@ -6,6 +6,7 @@
 
 body {
   padding-bottom: 70px;
+  font-size: 1.16rem;
   color: var(--global-text-color);
   background-color: var(--global-bg-color);
 
@@ -16,6 +17,10 @@ body {
   h5,
   h6 {
     scroll-margin-top: 66px;
+  }
+
+  h2 {
+    font-size: 1.8rem;
   }
 }
 

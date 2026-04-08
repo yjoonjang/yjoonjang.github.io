@@ -1,9 +1,38 @@
-"AJP":
-  url: https://aapt.scitation.org/journal/ajp
-  color: "#00369f"
+# 2026 venues - Blue tones
+"SIGIR 2026":
+  url: https://sigir2026.org/
+  color: "#1565c0"
 
-"PhysRev":
-  url: https://journals.aps.org/
+"ICLR 2026":
+  url: https://iclr.cc/Conferences/2026
+  color: "#1976d2"
 
-"Vision":
-  color: "#009f36"
+"ICLR WS 2026":
+  url: https://iclr.cc/Conferences/2026
+  color: "#1e88e5"
+
+"ACL 2026":
+  url: https://2026.aclweb.org/
+  color: "#2196f3"
+
+# 2025 venues - Green tones
+"ACL SRW 2025":
+  url: https://2025.aclweb.org/
+  color: "#2e7d32"
+
+"HCLT 2025":
+  url: http://www.hclt.kr/
+  color: "#388e3c"
+
+"ArXiv 2025":
+  url: https://arxiv.org/
+  color: "#546e7a"
+
+# 2024 venues - Orange/Amber tones
+"EMNLP 2024":
+  url: https://2024.emnlp.org/
+  color: "#e65100"
+
+"HCLT 2024":
+  url: http://www.hclt.kr/
+  color: "#f57c00"

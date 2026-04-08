@@ -15,7 +15,7 @@ footer_text: >
   Photos from <a href="https://unsplash.com" target="_blank">Unsplash</a>.
 keywords: nlp, information-retrieval, rag, ai, machine-learning, search
 lang: en
-icon: ⚛️ # the emoji used as the favicon (alternatively, provide image name in /assets/img/)
+icon: 🔍 # the emoji used as the favicon (alternatively, provide image name in /assets/img/)
 
 url: https://yjoonjang.github.io # the base hostname & protocol for your site
 baseurl: # the subpath of your site, e.g. /blog/. Leave blank for root

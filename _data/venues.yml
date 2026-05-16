@@ -1,39 +1,42 @@
-# Cohesive venue palette:
-# - Peer-reviewed venues (conferences, workshops, domestic) share one indigo accent.
-# - Preprints / non-archival use a neutral slate so they read as "in progress".
+# Venue-based palette: each venue family has one consistent, tone-matched color
+# (same venue keeps its color across years). Preprints/arXiv share a neutral slate.
 
-# Peer-reviewed — indigo
+# SIGIR — teal-blue
 "SIGIR 2026":
   url: https://sigir2026.org/
-  color: "#33558b"
+  color: "#356a7d"
 
+# ICLR — indigo
 "ICLR 2026":
   url: https://iclr.cc/Conferences/2026
-  color: "#33558b"
+  color: "#3d5a99"
 
 "ICLR WS 2026":
   url: https://iclr.cc/Conferences/2026
-  color: "#33558b"
+  color: "#3d5a99"
 
+# ACL — plum
 "ACL 2026":
   url: https://2026.aclweb.org/
-  color: "#33558b"
+  color: "#7d4a7d"
 
 "ACL SRW 2025":
   url: https://2025.aclweb.org/
-  color: "#33558b"
+  color: "#7d4a7d"
 
+# EMNLP — terracotta
 "EMNLP 2024":
   url: https://2024.emnlp.org/
-  color: "#33558b"
+  color: "#9c5d34"
 
+# HCLT — sage
 "HCLT 2025":
   url: http://www.hclt.kr/
-  color: "#33558b"
+  color: "#4f7a4d"
 
 "HCLT 2024":
   url: http://www.hclt.kr/
-  color: "#33558b"
+  color: "#4f7a4d"
 
 # Preprint / non-archival — neutral slate
 "ArXiv 2025":

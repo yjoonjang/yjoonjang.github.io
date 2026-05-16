@@ -59,16 +59,70 @@ layout: default
       <hr>
     {% endif %}
 
-    <!-- Publications -->
-    <div class="publications">
-      <h2 id="publications"><strong>Publications [Conference]</strong></h2>
-      {% bibliography --query @*[category=conference]* --group_by none %}
+    <!-- Education -->
+    <h2 id="education"><strong>Education</strong></h2>
+    <div style="margin-top: 1rem;">
+      <p>
+        <strong>M.S., Computer Science and Engineering</strong> — <a href="https://www.korea.edu/" target="_blank">Korea University</a>, Seoul (Mar.
+        2025 – Present)<br>
+        NLP&amp;AI Lab, advised by Prof. Heuiseok Lim. Research: Information Retrieval, Multilingual IR, RAG.
+      </p>
+      <p>
+        <strong>B.S., Computer Engineering &amp; Mechanical and System Design Engineering (Double Major)</strong> — Hongik University, Seoul (Mar.
+        2020 – Feb. 2025)
+      </p>
+    </div>
+    <hr>
 
-      <h2><strong>Publications [Domestic Conference]</strong></h2>
-      {% bibliography --query @*[category=domestic]* --group_by none %}
+    <!-- Projects -->
+    <h2 id="projects"><strong>Projects</strong></h2>
+    <div style="margin-top: 1rem;">
+      <p>
+        <strong>WBL: World Best LLM Project</strong>
+        (<a href="https://huggingface.co/NC-AI-consortium-VAETKI/VAETKI" target="_blank">HF</a>)<br>
+        Led the data team: built a query-clarity evaluation framework (GPT-5.2 prompts + a Qwen3-4B tagger) and a reward-model-ensemble
+        response-filtering pipeline for large-scale alignment data.
+      </p>
 
-      <h2><strong>Preprint</strong></h2>
-      {% bibliography --query @*[category=preprint]* --group_by none %}
+      <p>
+        <strong>KURE: Korea University Retrieval Embedding Model</strong>
+        (<a href="https://github.com/nlpai-lab/KURE" target="_blank">GitHub</a> ·
+        <a href="https://huggingface.co/nlpai-lab/KURE-v1" target="_blank">HF</a>)<br>
+        Flagship Korean retrieval project — SOTA dense retriever (1st on MTEB-ko-retrieval), 200+ GitHub stars and 1.3M+ cumulative Hugging Face
+        downloads. Best Oral Presentation, HCLT 2025.
+      </p>
+
+      <p>
+        <strong>Korean ColBERT &amp; Sparse Retrievers</strong>
+        (<a href="https://huggingface.co/yjoonjang/colbert-ko-v1" target="_blank">colbert-ko-v1</a> ·
+        <a href="https://huggingface.co/yjoonjang/splade-ko-v1" target="_blank">splade-ko-v1</a> ·
+        <a href="https://huggingface.co/yjoonjang/inference-free-splade-ko-v1" target="_blank">inference-free-splade-ko-v1</a>)<br>
+        Trained and open-sourced Korean ColBERT and SPLADE variants achieving SOTA among corresponding architectures on the Korean Retrieval
+        Benchmark.
+      </p>
+
+      <p>
+        <strong>KT–Korea University Collaborative Research (Korean Legal LLM)</strong>
+        (<a
+          href="https://www.koreatimes.co.kr/business/tech-science/20250721/judiciary-meets-ai-kt-to-build-ai-platform-for-court-system"
+          target="_blank"
+          >News</a
+        >)<br>
+        End-to-end training recipe for a Korean legal-domain LLM; directly contributed to KT's $10.42M contract for the South Korean Supreme Court AI
+        platform. Published as LEGALMIDM (ICLR 2026 Data-FM Workshop).
+      </p>
+
+      <p>
+        <strong>PreRanker</strong>
+        (<a href="https://github.com/yjoonjang/PreRanker" target="_blank">GitHub</a> ·
+        <a href="https://huggingface.co/yjoonjang/preranker-v1" target="_blank">HF</a>)<br>
+        Lightweight reranker that narrows candidate tools, reducing tool-call scope for LLM agents.
+      </p>
+
+      <p>
+        <strong>URACLE–Korea University Collaborative Research</strong><br>
+        Korean–English cross-lingual retrieval model; model merging to recover mono-lingual retrieval while retaining CLIR gains.
+      </p>
     </div>
     <hr>
 
@@ -132,80 +186,16 @@ layout: default
     </div>
     <hr>
 
-    <!-- Projects -->
-    <h2 id="projects"><strong>Projects</strong></h2>
-    <div style="margin-top: 1rem;">
-      <p>
-        <strong>WBL: World Best LLM Project</strong>
-        (<a href="https://huggingface.co/NC-AI-consortium-VAETKI/VAETKI" target="_blank">HF</a>)<br>
-        Led the data team: built a query-clarity evaluation framework (GPT-5.2 prompts + a Qwen3-4B tagger) and a reward-model-ensemble
-        response-filtering pipeline for large-scale alignment data.
-      </p>
+    <!-- Publications -->
+    <div class="publications">
+      <h2 id="publications"><strong>Publications [Conference]</strong></h2>
+      {% bibliography --query @*[category=conference]* --group_by none %}
 
-      <p>
-        <strong>KURE: Korea University Retrieval Embedding Model</strong>
-        (<a href="https://github.com/nlpai-lab/KURE" target="_blank">GitHub</a> ·
-        <a href="https://huggingface.co/nlpai-lab/KURE-v1" target="_blank">HF</a>)<br>
-        Flagship Korean retrieval project — SOTA dense retriever (1st on MTEB-ko-retrieval), 200+ GitHub stars and 1.3M+ cumulative Hugging Face
-        downloads. Best Oral Presentation, HCLT 2025.
-      </p>
+      <h2><strong>Publications [Domestic Conference]</strong></h2>
+      {% bibliography --query @*[category=domestic]* --group_by none %}
 
-      <p>
-        <strong>Korean ColBERT &amp; Sparse Retrievers</strong>
-        (<a href="https://huggingface.co/yjoonjang/colbert-ko-v1" target="_blank">colbert-ko-v1</a> ·
-        <a href="https://huggingface.co/yjoonjang/splade-ko-v1" target="_blank">splade-ko-v1</a> ·
-        <a href="https://huggingface.co/yjoonjang/inference-free-splade-ko-v1" target="_blank">inference-free-splade-ko-v1</a>)<br>
-        Trained and open-sourced Korean ColBERT and SPLADE variants achieving SOTA among corresponding architectures on the Korean Retrieval
-        Benchmark.
-      </p>
-
-      <p>
-        <strong>KT–Korea University Collaborative Research (Korean Legal LLM)</strong>
-        (<a
-          href="https://www.koreatimes.co.kr/business/tech-science/20250721/judiciary-meets-ai-kt-to-build-ai-platform-for-court-system"
-          target="_blank"
-          >News</a
-        >)<br>
-        End-to-end training recipe for a Korean legal-domain LLM; directly contributed to KT's $10.42M contract for the South Korean Supreme Court AI
-        platform. Published as LEGALMIDM (ICLR 2026 Data-FM Workshop).
-      </p>
-
-      <p>
-        <strong>PreRanker</strong>
-        (<a href="https://github.com/yjoonjang/PreRanker" target="_blank">GitHub</a> ·
-        <a href="https://huggingface.co/yjoonjang/preranker-v1" target="_blank">HF</a>)<br>
-        Lightweight reranker that narrows candidate tools, reducing tool-call scope for LLM agents.
-      </p>
-
-      <p>
-        <strong>URACLE–Korea University Collaborative Research</strong><br>
-        Korean–English cross-lingual retrieval model; model merging to recover mono-lingual retrieval while retaining CLIR gains.
-      </p>
-    </div>
-    <hr>
-
-    <!-- Education -->
-    <h2 id="education"><strong>Education</strong></h2>
-    <div style="margin-top: 1rem;">
-      <p>
-        <strong>M.S., Computer Science and Engineering</strong> — <a href="https://www.korea.edu/" target="_blank">Korea University</a>, Seoul (Mar.
-        2025 – Present)<br>
-        NLP&amp;AI Lab, advised by Prof. Heuiseok Lim. Research: Information Retrieval, Multilingual IR, RAG.
-      </p>
-      <p>
-        <strong>B.S., Computer Engineering &amp; Mechanical and System Design Engineering (Double Major)</strong> — Hongik University, Seoul (Mar.
-        2020 – Feb. 2025)
-      </p>
-    </div>
-    <hr>
-
-    <!-- Awards -->
-    <h2 id="awards"><strong>Awards</strong></h2>
-    <div style="margin-top: 1rem;">
-      <p>
-        <strong>Best Oral Presentation Award</strong> — Annual Conference on Human &amp; Cognitive Language Technology (HCLT 2025)<br>
-        For “KURE: Embedding Model for Korean-Specific Retrieval.”
-      </p>
+      <h2><strong>Preprint</strong></h2>
+      {% bibliography --query @*[category=preprint]* --group_by none %}
     </div>
 
     <!-- Social -->

@@ -1,14 +1,9 @@
 name: Render a CV
+# Auto-run on push is disabled: _data/cv.yml is shaped for al-folio's HTML CV
+# rendering (custom section titles, label/details, name/highlights), which is
+# incompatible with the standalone RenderCV package's strict schema. This site
+# does not publish a generated CV PDF. Trigger manually only if ever needed.
 on:
-  push:
-    branches:
-      - main
-      - master
-    paths:
-      - "_data/cv.yml"
-      - "assets/rendercv/design.yaml"
-      - "assets/rendercv/locale.yaml"
-      - "assets/rendercv/settings.yaml"
   workflow_call:
   workflow_dispatch:
 permissions:

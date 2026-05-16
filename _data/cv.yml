@@ -1,10 +1,15 @@
 cv:
   name: Youngjoon Jang
-  label: NLP Researcher
+  label: Retrieval Researcher & Engineer
   email: yjoonjang34@gmail.com
   location: Seoul, South Korea
   image: ""
-  summary: M.S. student researching Information Retrieval and RAG systems at Korea University NLP&AI Lab.
+  summary: >-
+    Retrieval researcher and engineer specializing in dense, sparse, and
+    late-interaction retrieval, multilingual information retrieval, and
+    retrieval-augmented generation. Published at SIGIR, ICLR, ACL, and EMNLP;
+    led Korean retrieval models and benchmarks with 200+ GitHub stars and
+    1.3M+ cumulative Hugging Face downloads.
 
   social_networks:
     - network: GitHub
@@ -23,7 +28,7 @@ cv:
         end_date: Present
         highlights:
           - "NLP&AI Lab, advised by Prof. Heuiseok Lim"
-          - "Research focus: Information Retrieval, RAG"
+          - "Research focus: Information Retrieval, Multilingual IR, RAG"
 
       - institution: Hongik University
         location: Seoul, South Korea
@@ -32,34 +37,115 @@ cv:
         start_date: 2020
         end_date: 2025
 
+    Publications [Conference]:
+      - label: "Beyond Hard Negatives: The Importance of Score Distribution in Knowledge Distillation for Dense Retrieval"
+        details: "Youngjoon Jang, Seongtae Hong, Hyeonseok Moon, Heuiseok Lim · SIGIR 2026"
+      - label: "Improving Semantic Proximity in Information Retrieval through Cross-Lingual Alignment"
+        details: "Seongtae Hong, Youngjoon Jang, Jungseob Lee, Hyeonseok Moon, Heuiseok Lim · ICLR 2026"
+      - label: "LEGALMIDM: Use-Case-Driven Legal Domain Specialization for Korean Large Language Model"
+        details: "Youngjoon Jang, Chanhee Park, Hyeonseok Moon, Young-kyoung Ham, Jiwon Moon, Jinhyeon Kim, JuKyung Jung, Heuiseok Lim · ICLR 2026 Data-FM Workshop"
+      - label: "CLEAR: Cross-Lingual Enhancement in Retrieval via Reverse-training"
+        details: "Seungyoon Lee, Minhyuk Kim, Seongtae Hong, Youngjoon Jang, Dongsuk Oh, Heuiseok Lim · ACL 2026"
+      - label: "From Ambiguity to Accuracy: The Transformative Effect of Coreference Resolution on Retrieval-Augmented Generation systems"
+        details: "Youngjoon Jang, Seongtae Hong, Junyoung Son, Sungjin Park, Chanjun Park, Heuiseok Lim · ACL 2025 SRW"
+      - label: "Where am I? Large Language Models Wandering between Semantics and Structures in Long Contexts"
+        details: "Seonmin Koo, Jinsung Kim, Youngjoon Jang, Chanjun Park, Heuiseok Lim · EMNLP 2024"
+
+    Publications [Domestic Conference]:
+      - label: "KURE: Embedding Model for Korean-Specific Retrieval"
+        details: "Youngjoon Jang, Junyoung Son, Taemin Lee, Seongtae Hong, Jungbae Park, Heuiseok Lim · HCLT 2025 · Best Oral Presentation Award"
+      - label: "KoE5: A New Dataset and Model for Improving Korean Embedding Performance"
+        details: "Youngjoon Jang, Junyoung Son, Taemin Lee, Seongtae Hong, Jungbae Park, Heuiseok Lim · HCLT 2024"
+
+    Preprint:
+      - label: "MLAIRE: Multilingual Language-Aware Information Retrieval Evaluation Protocol"
+        details: "Youngjoon Jang, Seongtae Hong, Hyeonseok Moon, Heuiseok Lim · Under Review · 2026"
+      - label: "MIMO: Multilingual Information Retrieval from Monolingual Oracles"
+        details: "Youngjoon Jang, Seongtae Hong, Heuiseok Lim · Under Review · 2026"
+      - label: "SHIFT: Semantic Harmonization via Index-side Feature Transformation for Multilingual Information Retrieval"
+        details: "Youngjoon Jang, Seongtae Hong, Hyeonseok Moon, Heuiseok Lim · Under Review · 2026"
+      - label: "Improving Korean-English Cross-Lingual Retrieval: A Data-Centric Study of Language Composition and Model Merging"
+        details: "Youngjoon Jang, Junyoung Son, Taemin Lee, Seongtae Hong, Hyeonseok Moon, Seungyoon Lee, Andrew Matteson, Heuiseok Lim · arXiv · 2025"
+      - label: "VAETKI Technical Report"
+        details: "NC-AI Consortium · arXiv · 2025"
+
+    Open Source Projects:
+      - name: "Sentence-Transformers"
+        start_date: 2025
+        end_date: 2026
+        highlights:
+          - "Extended the cross-encoder training stack with classic learning-to-rank losses (RankNetLoss, ListMLELoss, Position-Aware ListMLELoss) and runnable examples."
+          - "Implemented EmbedDistillLoss for direct embedding-level knowledge distillation (PR #3665)."
+          - "Introduced hardness-weighted contrastive learning to up-weight informative hard negatives (PR #3667)."
+          - "Implemented CachedSpladeLoss for gradient-cache compatible, memory-efficient SPLADE training (PR #3670)."
+      - name: "MTEB (Massive Text Embeddings Benchmark)"
+        start_date: 2024
+        end_date: 2025
+        highlights:
+          - "Added a Korean retrieval benchmark task (AutoRAGRetrieval) and polished task metadata and registration (PR #1388)."
+          - "Improved stability of the OpenAI embedding wrapper with sentence trimming and tighter dependency handling (PR #1526)."
+          - "Fixed NaN embeddings for Jasper models by switching from float16 to bfloat16 (PR #2481)."
+      - name: "InstructKR"
+        start_date: 2026
+        end_date: 2026
+        highlights:
+          - "Led the Korean Reranker evaluation and leaderboard project, establishing a standardized Korean benchmark suite for text reranking models."
+
+    Projects:
+      - name: "WBL: World Best LLM Project"
+        start_date: 2025
+        end_date: 2025
+        highlights:
+          - "Led the data team; built a query clarity evaluation framework with engineered GPT-5.2 prompts and a Qwen3-4B tagger."
+          - "Established a response filtering pipeline ensembling three reward models with score fusion."
+          - "Curated large-scale alignment samples using LLM-as-a-judge and code-execution metrics."
+      - name: "KURE: Korea University Retrieval Embedding Model"
+        highlights:
+          - "Led the lab's flagship Korean retrieval project; trained a SOTA dense retriever (1st on MTEB-ko-retrieval, Aug. 2025)."
+          - "Designed and maintained MTEB-ko-retrieval, a standardized public Korean IR leaderboard."
+          - "Open-sourced the framework: 200+ GitHub stars and 1.3M+ cumulative Hugging Face downloads (Best Oral, HCLT 2025)."
+      - name: "Korean ColBERT & Sparse Retrievers"
+        highlights:
+          - "Trained and open-sourced Korean ColBERT and SPLADE variants achieving SOTA among corresponding architectures (Feb. 2026)."
+          - "Provided optimized, reproducible pipelines advancing dense-sparse hybrid retrieval experiments."
+      - name: "KT–Korea University Collaborative Research (Korean Legal LLM)"
+        highlights:
+          - "Developed an end-to-end training recipe for a Korean legal-domain LLM with expert-written and synthetic alignment data."
+          - "Directly contributed to KT winning a $10.42M contract to build an AI platform for the South Korean Supreme Court."
+          - "Published the methodology as LEGALMIDM at the ICLR 2026 Data-FM Workshop."
+      - name: "PreRanker"
+        highlights:
+          - "Built a lightweight reranker to narrow candidate tools, reducing tool-call scope for LLM agents."
+      - name: "URACLE–Korea University Collaborative Research"
+        highlights:
+          - "Trained a Korean–English cross-lingual retrieval model; used model merging to recover mono-lingual retrieval while retaining CLIR gains."
+
+    Skills:
+      - name: "Languages"
+        icon: fa-solid fa-code
+        keywords:
+          - "Python"
+          - "Bash"
+          - "SQL"
+      - name: "Machine Learning"
+        icon: fa-solid fa-brain
+        keywords:
+          - "PyTorch"
+          - "Hugging Face (Transformers, Sentence-Transformers, Accelerate)"
+          - "vLLM"
+      - name: "Infrastructure & Tools"
+        icon: fa-solid fa-cloud
+        keywords:
+          - "Docker"
+          - "Linux"
+          - "Git"
+          - "Weights & Biases"
+
     Awards:
       - title: Best Oral Presentation Award
-        authors:
-          - "HCLT 2025"
         date: 2025
         awarder: Annual Conference on Human & Cognitive Language Technology
         summary: "Awarded for the paper: KURE: Embedding Model for Korean-Specific Retrieval"
-
-    Skills:
-      - name: "Machine Learning & Deep Learning"
-        level: Advanced
-        icon: fa-solid fa-brain
-        keywords: "PyTorch, Transformers, Sentence-Transformers, Deepspeed, vLLM, Datasets"
-
-      - name: Back-end
-        level: Intermediate
-        icon: fa-solid fa-server
-        keywords: "Django, FastAPI"
-
-      - name: Front-end
-        level: Intermediate
-        icon: fa-solid fa-code
-        keywords: "Next.js, React, HTML"
-
-      - name: DevOps
-        level: Intermediate
-        icon: fa-solid fa-cloud
-        keywords: "AWS, Docker"
 
     Languages:
       - name: Korean

@@ -5,4 +5,4 @@ inline: true
 related_posts: false
 ---
 
-Paper accepted at **SIGIR 2026**: "Beyond Hard Negatives: The Importance of Score Distribution in Knowledge Distillation for Dense Retrieval"
+Our paper "Beyond Hard Negatives: The Importance of Score Distribution in Knowledge Distillation for Dense Retrieval" has been accepted to SIGIR 2026 🎉

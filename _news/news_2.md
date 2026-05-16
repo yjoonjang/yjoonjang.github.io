@@ -5,4 +5,4 @@ inline: true
 related_posts: false
 ---
 
-Paper accepted at **ICLR 2026 Data-FM Workshop**: "LEGALMIDM: Use-Case-Driven Legal Domain Specialization for Korean LLM"
+Our paper "LEGALMIDM: Use-Case-Driven Legal Domain Specialization for Korean Large Language Model" has been accepted to the ICLR 2026 Data-FM Workshop 🎉

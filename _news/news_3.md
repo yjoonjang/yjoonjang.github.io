@@ -5,4 +5,4 @@ inline: true
 related_posts: false
 ---
 
-Paper accepted at **ICLR 2026**: "Improving Semantic Proximity in Information Retrieval through Cross-Lingual Alignment"
+Our paper "Improving Semantic Proximity in Information Retrieval through Cross-Lingual Alignment" has been accepted to ICLR 2026 🎉

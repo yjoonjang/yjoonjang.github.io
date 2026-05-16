@@ -94,6 +94,9 @@ jobs:
           pip3 install --upgrade nbconvert
           export JEKYLL_ENV=production
           bundle exec jekyll build
+          # Serve the pre-built site verbatim: stop GitHub Pages' legacy Jekyll
+          # from re-processing _site (it lacks jekyll-scholar, breaks on tags).
+          touch _site/.nojekyll
       - name: Purge unused CSS 🧹
         run: |
           npm install -g purgecss

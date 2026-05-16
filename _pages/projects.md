@@ -6,7 +6,7 @@ description: Research projects in NLP, Information Retrieval, and RAG.
 nav: false
 ---
 
-## WBL: World Best LLM Project
+## WBL: World Best LLM Project &nbsp; [HuggingFace](https://huggingface.co/NC-AI-consortium-VAETKI/VAETKI)
 
 - Led the data team and established a query clarity evaluation framework using engineered GPT-5.2 prompts, training a Qwen3-4B model as a proprietary tagger to selectively curate datasets with diverse clarity levels.
 - Established a robust response filtering pipeline for off-policy SFT data by ensembling three distinct reward models, applying score fusion techniques to accurately evaluate and retain high-quality responses.
@@ -18,7 +18,7 @@ nav: false
 
 - Led the lab's flagship Korean retrieval project; curated large-scale training datasets and trained a dense retriever that achieved **State-of-the-Art (1st place) on the MTEB-ko-retrieval leaderboard** (as of Aug. 2025).
 - Designed and maintained `MTEB-ko-retrieval`, establishing a comprehensive evaluation suite and standardized public leaderboard for the Korean IR community.
-- Open-sourced the framework, achieving **200+ GitHub stars and 1.1M+ cumulative downloads** on Hugging Face.
+- Open-sourced the framework, achieving **200+ GitHub stars and 1.3M+ cumulative downloads** on Hugging Face.
 - **Awarded Best Oral Presentation at HCLT 2025.**
 
 ---

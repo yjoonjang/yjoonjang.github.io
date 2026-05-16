@@ -1,48 +1,49 @@
-# Venue-based palette: each venue family has one consistent, tone-matched color
-# (same venue keeps its color across years). Preprints/arXiv share a neutral slate.
+# Soft pastel, venue-based palette: each venue family keeps one consistent
+# pastel color across years. Badge text is dark slate (#374151) for contrast
+# (set in _sass/_publications.scss). Preprints/arXiv share a pale neutral.
 
-# SIGIR — teal-blue
+# SIGIR — pale teal
 "SIGIR 2026":
   url: https://sigir2026.org/
-  color: "#356a7d"
+  color: "#bfe3e0"
 
-# ICLR — indigo
+# ICLR — pale periwinkle
 "ICLR 2026":
   url: https://iclr.cc/Conferences/2026
-  color: "#3d5a99"
+  color: "#cdd6f5"
 
 "ICLR WS 2026":
   url: https://iclr.cc/Conferences/2026
-  color: "#3d5a99"
+  color: "#cdd6f5"
 
-# ACL — plum
+# ACL — pale plum
 "ACL 2026":
   url: https://2026.aclweb.org/
-  color: "#7d4a7d"
+  color: "#ecd4ec"
 
 "ACL SRW 2025":
   url: https://2025.aclweb.org/
-  color: "#7d4a7d"
+  color: "#ecd4ec"
 
-# EMNLP — terracotta
+# EMNLP — pale peach
 "EMNLP 2024":
   url: https://2024.emnlp.org/
-  color: "#9c5d34"
+  color: "#f6dcc6"
 
-# HCLT — sage
+# HCLT — pale sage
 "HCLT 2025":
   url: http://www.hclt.kr/
-  color: "#4f7a4d"
+  color: "#d4e8cf"
 
 "HCLT 2024":
   url: http://www.hclt.kr/
-  color: "#4f7a4d"
+  color: "#d4e8cf"
 
-# Preprint / non-archival — neutral slate
+# Preprint / non-archival — pale neutral grey
 "ArXiv 2025":
   url: https://arxiv.org/
-  color: "#64748b"
+  color: "#e3e6eb"
 
 "Preprint":
   url: https://arxiv.org/
-  color: "#64748b"
+  color: "#e3e6eb"

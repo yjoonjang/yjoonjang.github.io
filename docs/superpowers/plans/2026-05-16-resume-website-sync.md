@@ -19,11 +19,12 @@
 Add a `category` field to every entry, add 3 new preprint entries, fix two `html` links to match `resume.tex`, and order entries so each category lists in resume order (page uses `--group_by none`, which preserves file order).
 
 **Files:**
+
 - Modify (full overwrite): `_bibliography/papers.bib`
 
 - [ ] **Step 1: Overwrite `_bibliography/papers.bib` with the exact content below**
 
-````bibtex
+```bibtex
 ---
 ---
 
@@ -207,11 +208,12 @@ Add a `category` field to every entry, add 3 new preprint entries, fix two `html
   preview     = {vaetki.png},
   abstract    = {Technical report for the VAETKI project by the NC-AI Consortium.}
 }
-````
+```
 
 - [ ] **Step 2: Verify structure with grep**
 
 Run:
+
 ```bash
 grep -c "category    = {conference}" _bibliography/papers.bib
 grep -c "category    = {domestic}" _bibliography/papers.bib
@@ -219,6 +221,7 @@ grep -c "category    = {preprint}" _bibliography/papers.bib
 grep -c "^@" _bibliography/papers.bib
 grep -n "openreview.net/forum?id=NvKvW5k6Kk\|arxiv.org/abs/2604.25297" _bibliography/papers.bib
 ```
+
 Expected: conference `6`, domestic `2`, preprint `5`, total `@` entries `13`, and both fixed links present (ICLR → openreview NvKvW5k6Kk, LEGALMIDM → arxiv 2604.25297).
 
 - [ ] **Step 3: Commit**
@@ -233,6 +236,7 @@ git commit -m "feat(bib): categorize publications + add MLAIRE/MIMO/SHIFT prepri
 ### Task 2: Rebuild Publications page into 3 sections + filter `category` keyword
 
 **Files:**
+
 - Modify (full overwrite): `_pages/publications.md`
 - Modify: `_config.yml` (add `category` to `filtered_bibtex_keywords`)
 
@@ -240,7 +244,7 @@ git commit -m "feat(bib): categorize publications + add MLAIRE/MIMO/SHIFT prepri
 
 Headings are explicit `<h2>` (kramdown does not parse `##` inside a block-level `<div>`; Liquid tags are processed regardless):
 
-````markdown
+```markdown
 ---
 layout: page
 permalink: /publications/
@@ -271,31 +275,36 @@ nav_order: 2
 {% bibliography --query @*[category=preprint]* --group_by none %}
 
 </div>
-````
+```
 
 - [ ] **Step 2: Add `category` to `filtered_bibtex_keywords` in `_config.yml`**
 
 Find this exact block fragment in `_config.yml`:
+
 ```yaml
-    bibtex_show,
-    blog,
-    code,
+bibtex_show,
+blog,
+code,
 ```
+
 Replace it with:
+
 ```yaml
-    bibtex_show,
-    blog,
-    category,
-    code,
+bibtex_show,
+blog,
+category,
+code,
 ```
 
 - [ ] **Step 3: Verify**
 
 Run:
+
 ```bash
 grep -c "{% bibliography --query @\*\[category=" _pages/publications.md
 grep -n "category," _config.yml
 ```
+
 Expected: publications.md shows `3`; `_config.yml` shows the `category,` line inside the keyword list.
 
 - [ ] **Step 4: Commit**
@@ -310,15 +319,19 @@ git commit -m "feat(publications): split into Conference/Domestic/Preprint secti
 ### Task 3: Update `_pages/about.md` research summary
 
 **Files:**
+
 - Modify: `_pages/about.md`
 
 - [ ] **Step 1: Replace the research paragraph**
 
 Find this exact line:
+
 ```
 My research focuses on **Information Retrieval (IR)** and **Retrieval-Augmented Generation (RAG)** systems. I aim to make AI models more beneficial to humans and society.
 ```
+
 Replace with:
+
 ```
 My research centers on **information retrieval** — dense, sparse, and late-interaction retrieval — along with **multilingual information retrieval** and **retrieval-augmented generation (RAG)**. My work has been published at top-tier AI and IR venues including **SIGIR, ICLR, ACL, and EMNLP**. I have contributed retrieval training losses and evaluation utilities to open-source ecosystems such as Sentence-Transformers and MTEB, and led Korean retrieval model and benchmark projects that achieved **200+ GitHub stars and 1.3M+ cumulative Hugging Face downloads**. I aim to make AI models more beneficial to humans and society.
 ```
@@ -326,10 +339,12 @@ My research centers on **information retrieval** — dense, sparse, and late-int
 - [ ] **Step 2: Verify**
 
 Run:
+
 ```bash
 grep -c "1.3M+ cumulative Hugging Face downloads" _pages/about.md
 grep -c "SIGIR, ICLR, ACL, and EMNLP" _pages/about.md
 ```
+
 Expected: each `1`.
 
 - [ ] **Step 3: Commit**
@@ -344,16 +359,20 @@ git commit -m "feat(about): align research summary with updated resume"
 ### Task 4: Update `_pages/opensource.md` (EmbedDistillLoss + InstructKR)
 
 **Files:**
+
 - Modify: `_pages/opensource.md`
 
 - [ ] **Step 1: Add the EmbedDistillLoss bullet (resume order: after the learning-to-rank bullet)**
 
 Find this exact two-line fragment:
+
 ```
 - Extended the cross-encoder training stack with classic learning-to-rank losses (Position-Aware ListMLELoss, RankNetLoss) and runnable examples. [[PR#6](https://github.com/tomaarsen/sentence-transformers/pull/6)] [[PR#7](https://github.com/tomaarsen/sentence-transformers/pull/7)]
 - Introduced hardness-weighted contrastive learning to up-weight informative hard negatives across multiple losses via configurable hardness parameters. [[PR#3667](https://github.com/huggingface/sentence-transformers/pull/3667)]
 ```
+
 Replace with:
+
 ```
 - Extended the cross-encoder training stack with classic learning-to-rank losses (Position-Aware ListMLELoss, RankNetLoss) and runnable examples. [[PR#6](https://github.com/tomaarsen/sentence-transformers/pull/6)] [[PR#7](https://github.com/tomaarsen/sentence-transformers/pull/7)]
 - Implemented `EmbedDistillLoss` to support direct embedding-level knowledge distillation, enabling efficient representation transfer from teacher to student models. [[PR#3665](https://github.com/huggingface/sentence-transformers/pull/3665)]
@@ -363,12 +382,15 @@ Replace with:
 - [ ] **Step 2: Add the InstructKR section before the FlagEmbedding section**
 
 Find this exact fragment:
+
 ```
 ---
 
 ## [FlagEmbedding](https://github.com/FlagOpen/FlagEmbedding)
 ```
+
 Replace with:
+
 ```
 ---
 
@@ -384,11 +406,13 @@ Replace with:
 - [ ] **Step 3: Verify**
 
 Run:
+
 ```bash
 grep -c "EmbedDistillLoss" _pages/opensource.md
 grep -c "reranker-simple-benchmark" _pages/opensource.md
 grep -c "FlagEmbedding" _pages/opensource.md
 ```
+
 Expected: `EmbedDistillLoss` `1`, `reranker-simple-benchmark` `1`, `FlagEmbedding` ≥`2` (section heading + link still present).
 
 - [ ] **Step 4: Commit**
@@ -403,16 +427,20 @@ git commit -m "feat(opensource): add EmbedDistillLoss PR and InstructKR section"
 ### Task 5: Unify Hugging Face downloads to `1.3M+`
 
 **Files:**
+
 - Modify: `_pages/projects.md`
 - Modify: `_projects/kure.md`
 
 - [ ] **Step 1: `_pages/projects.md` — update KURE downloads**
 
 Find this exact line:
+
 ```
 - Open-sourced the framework, achieving **200+ GitHub stars and 1.1M+ cumulative downloads** on Hugging Face.
 ```
+
 Replace with:
+
 ```
 - Open-sourced the framework, achieving **200+ GitHub stars and 1.3M+ cumulative downloads** on Hugging Face.
 ```
@@ -420,10 +448,13 @@ Replace with:
 - [ ] **Step 2: `_pages/projects.md` — add WBL Hugging Face link (matches existing heading style)**
 
 Find this exact line:
+
 ```
 ## WBL: World Best LLM Project
 ```
+
 Replace with:
+
 ```
 ## WBL: World Best LLM Project &nbsp; [HuggingFace](https://huggingface.co/NC-AI-consortium-VAETKI/VAETKI)
 ```
@@ -431,10 +462,13 @@ Replace with:
 - [ ] **Step 3: `_projects/kure.md` — update KURE downloads**
 
 Find this exact line:
+
 ```
 - Open-sourced the framework, achieving **200+ GitHub stars and 1.1M+ cumulative downloads** on Hugging Face
 ```
+
 Replace with:
+
 ```
 - Open-sourced the framework, achieving **200+ GitHub stars and 1.3M+ cumulative downloads** on Hugging Face
 ```
@@ -442,10 +476,12 @@ Replace with:
 - [ ] **Step 4: Verify no stale figures remain site-wide**
 
 Run:
+
 ```bash
 grep -rn "1\.1M\|1\.2M" _pages/ _projects/ _data/ _bibliography/ _news/ 2>/dev/null || echo "CLEAN"
 grep -rc "1.3M+" _pages/projects.md _projects/kure.md
 ```
+
 Expected: first command prints `CLEAN` (no `1.1M`/`1.2M` anywhere in content dirs); second shows `1` for each file.
 
 - [ ] **Step 5: Commit**
@@ -462,11 +498,12 @@ git commit -m "fix: unify Hugging Face downloads to 1.3M+ and add WBL HF link"
 Reuse only rendercv entry shapes already proven to render in the current file: Education-style (`institution`/`area`/`start_date`/`end_date`/`highlights`) for Open Source & Projects, Awards-style (`title`/`authors`/`date`/`awarder`/`summary`) for Publications & Awards, plus the existing Skills and Languages shapes.
 
 **Files:**
+
 - Modify (full overwrite): `_data/cv.yml`
 
 - [ ] **Step 1: Overwrite `_data/cv.yml` with exactly this content**
 
-````yaml
+```yaml
 cv:
   name: Youngjoon Jang
   label: Retrieval Researcher & Engineer
@@ -662,24 +699,28 @@ cv:
         summary: "Native speaker"
       - name: English
         summary: "Fluent"
-````
+```
 
 - [ ] **Step 2: Validate YAML syntax**
 
 Run:
+
 ```bash
 ruby -ryaml -e "YAML.load_file('_data/cv.yml'); puts 'YAML OK'"
 ```
+
 Expected: `YAML OK`. (If `ruby` is unavailable, use: `python3 -c "import yaml,sys; yaml.safe_load(open('_data/cv.yml')); print('YAML OK')"` — install pyyaml if needed, or defer this check to the Docker build in Task 9.)
 
 - [ ] **Step 3: Verify content**
 
 Run:
+
 ```bash
 grep -c "Publications \[Conference\]:\|Publications \[Domestic Conference\]:\|Preprint:" _data/cv.yml
 grep -c "Django\|FastAPI\|Next.js\|AWS" _data/cv.yml
 grep -c "1.3M+ cumulative Hugging Face downloads" _data/cv.yml
 ```
+
 Expected: section headers `3`; stale skills (`Django/FastAPI/Next.js/AWS`) `0`; KURE downloads line `1`.
 
 - [ ] **Step 4: Commit**
@@ -694,11 +735,12 @@ git commit -m "feat(cv): rework cv.yml from resume (skills, publications, projec
 ### Task 7: Update `_pages/cv.md` (remove demo PDF, expose in nav)
 
 **Files:**
+
 - Modify: `_pages/cv.md`
 
 - [ ] **Step 1: Overwrite `_pages/cv.md` with exactly this content**
 
-````markdown
+```markdown
 ---
 layout: cv
 permalink: /cv/
@@ -710,16 +752,18 @@ description: Curriculum Vitae of Youngjoon Jang — research, publications, open
 toc:
   sidebar: left
 ---
-````
+```
 
 - [ ] **Step 2: Verify**
 
 Run:
+
 ```bash
 grep -c "cv_pdf" _pages/cv.md
 grep -c "nav: true" _pages/cv.md
 grep -c "example_pdf" _pages/cv.md
 ```
+
 Expected: `cv_pdf` `0`, `nav: true` `1`, `example_pdf` `0`.
 
 - [ ] **Step 3: Commit**
@@ -736,13 +780,14 @@ git commit -m "feat(cv): remove demo PDF button, expose CV in navbar"
 Keep existing `_news/news_1.md` (SIGIR 2026) and `_news/news_2.md` (LEGALMIDM). Add three new inline news posts. Filenames continue the `news_N.md` sequence.
 
 **Files:**
+
 - Create: `_news/news_3.md`
 - Create: `_news/news_4.md`
 - Create: `_news/news_5.md`
 
 - [ ] **Step 1: Create `_news/news_3.md`**
 
-````markdown
+```markdown
 ---
 layout: post
 date: 2026-03-03 00:00:00+0900
@@ -751,11 +796,11 @@ related_posts: false
 ---
 
 Paper accepted at **ICLR 2026**: "Improving Semantic Proximity in Information Retrieval through Cross-Lingual Alignment"
-````
+```
 
 - [ ] **Step 2: Create `_news/news_4.md`**
 
-````markdown
+```markdown
 ---
 layout: post
 date: 2026-01-23 00:00:00+0900
@@ -764,11 +809,11 @@ related_posts: false
 ---
 
 Paper accepted at **ACL 2026**: "CLEAR: Cross-Lingual Enhancement in Retrieval via Reverse-training"
-````
+```
 
 - [ ] **Step 3: Create `_news/news_5.md`**
 
-````markdown
+```markdown
 ---
 layout: post
 date: 2025-10-17 00:00:00+0900
@@ -777,15 +822,17 @@ related_posts: false
 ---
 
 Received the **Best Oral Presentation Award** at **HCLT 2025** for "KURE: Embedding Model for Korean-Specific Retrieval"
-````
+```
 
 - [ ] **Step 4: Verify**
 
 Run:
+
 ```bash
 ls _news/news_*.md | wc -l
 grep -l "ICLR 2026\|ACL 2026\|Best Oral Presentation Award" _news/news_3.md _news/news_4.md _news/news_5.md
 ```
+
 Expected: `5` news files; all three new files matched.
 
 - [ ] **Step 5: Commit**
@@ -802,86 +849,105 @@ git commit -m "feat(news): add ICLR 2026, ACL 2026, and HCLT Best Oral items"
 This is the real verification gate. It builds the site, checks every acceptance criterion, applies Prettier, and fixes any rendering issues found.
 
 **Files:**
+
 - Potentially modify: `_pages/publications.md` (heading markup), `_data/cv.yml` (section entry shape) — only if Step 4 finds rendering defects.
 
 - [ ] **Step 1: Start the Docker dev server (background)**
 
 Run:
+
 ```bash
 docker compose up --build
 ```
+
 Run this in the background and wait for `Server running... press ctrl-c to stop.` Expected: build completes with **no Jekyll/jekyll-scholar errors** (watch for BibTeX parse errors or Liquid errors referencing `publications.md` / `cv.yml`).
 
 - [ ] **Step 2: Smoke-check pages return HTTP 200**
 
 Run:
+
 ```bash
 for p in / /publications/ /cv/ /projects/ /opensource/; do printf "%s -> " "$p"; curl -s -o /dev/null -w "%{http_code}\n" "http://localhost:8080$p"; done
 ```
+
 Expected: every path prints `200`.
 
 - [ ] **Step 2b: Build artifact missing-figure check (non-blocking)**
 
 The 3 new preprints intentionally have no `preview`. Confirm no other thumbnail broke:
+
 ```bash
 grep -ro "category" _site/publications/index.html | head -1 && echo "category leaked into HTML (should be empty)" || echo "category not rendered (correct)"
 ```
+
 Expected: `category not rendered (correct)` (the `category` field must be filtered out of visible output and the BibTeX popup).
 
 - [ ] **Step 3: Verify Publications categorization in built HTML**
 
 Run:
+
 ```bash
 grep -o "Publications \[Conference\]\|Publications \[Domestic Conference\]\|Preprint" _site/publications/index.html | sort -u
 grep -c "MLAIRE\|MIMO\|SHIFT" _site/publications/index.html
 grep -c "bibliography" _site/publications/index.html
 ```
+
 Expected: all three section titles present; new preprints (`MLAIRE/MIMO/SHIFT`) count ≥ `3`; at least one `bibliography` list rendered (bib-search intact).
 
 - [ ] **Step 4: Visual verification (browse the running site)**
 
 Open `http://localhost:8080` and visually confirm on `/`, `/publications/`, `/cv/`, `/projects/`, `/opensource/`:
+
 - Publications page shows exactly three sections in order **Conference → Domestic → Preprint**, each paper in the correct category and in resume order; bib search box works; clicking "BibTeX" does NOT show a `category` field.
 - CV page renders cleanly: reworked Technical Skills (Python/Bash/SQL, PyTorch/HF/vLLM, Docker/Linux/Git/W&B), the three Publications sections, Open Source, Projects, Awards, Languages; **no PDF icon** next to the title; CV link visible in the navbar; left TOC sidebar works.
 - Dark-mode toggle works on every page; navbar correct.
 
 **Remediation if defects found (apply, then re-verify Steps 3–4):**
+
 - If the `<h2>` category headers render unstyled/misaligned: change them in `_pages/publications.md` to `<h2 class="bibliography">…</h2>`, or move each header out of the `<div class="publications">` wrapper into its own line above each `{% bibliography %}` call (keep the Liquid tags inside their own `<div class="publications">` wrappers).
 - If any `_data/cv.yml` section renders as raw text / collapsed (rendercv didn't recognize the entry shape): convert that section's items to the Education-proven shape — each item becomes `- institution: "<title>"` with the descriptive text as a single-item `highlights:` list, and `area`/`start_date`/`end_date` as available. Example for a Publications entry:
+
   ```yaml
   - institution: "Beyond Hard Negatives: ... for Dense Retrieval"
     area: "SIGIR 2026"
     highlights:
       - "Youngjoon Jang, Seongtae Hong, Hyeonseok Moon, Heuiseok Lim"
   ```
+
   Apply uniformly within the affected section only.
 
 - [ ] **Step 5: Site-wide stale-figure and link sanity grep**
 
 Run:
+
 ```bash
 grep -rn "1\.1M\|1\.2M" _pages/ _projects/ _data/ _bibliography/ _news/ 2>/dev/null || echo "DOWNLOADS CLEAN"
 grep -rn "example_pdf" _pages/ 2>/dev/null || echo "PDF CLEAN"
 git status --short
 ```
+
 Expected: `DOWNLOADS CLEAN`, `PDF CLEAN`, and `git status` shows only `?? .omc/` and `?? resume.tex` untracked (no tracked changes lost; `_site/` is gitignored).
 
 - [ ] **Step 6: Run Prettier (per AGENTS.md pre-commit checklist)**
 
 Run:
+
 ```bash
 npx prettier . --write
 ```
+
 Then re-confirm the Docker site still builds without error (Jekyll auto-rebuilds on file change; check the running server log for errors). If Prettier reformats `_data/cv.yml`, `_bibliography/papers.bib`, or `publications.md`, re-run Step 3.
 
 - [ ] **Step 7: Stop Docker and commit**
 
 Run:
+
 ```bash
 docker compose down
 git add -A -- ':!resume.tex' ':!.omc'
 git commit -m "chore: prettier formatting + verified resume sync build"
 ```
+
 (If `git status` shows nothing to commit because Prettier made no changes and Steps were clean, skip the commit and note "no formatting changes needed".)
 
 ---
@@ -889,6 +955,7 @@ git commit -m "chore: prettier formatting + verified resume sync build"
 ## Self-Review
 
 **1. Spec coverage** (each spec §/requirement → task):
+
 - §4.1 papers.bib category + 3 preprints + link fixes → **Task 1** ✓
 - §4.1 publications.md 3 sections + `_config.yml` filtered keyword → **Task 2** ✓
 - §4.2 about.md research summary + 1.3M+ → **Task 3** ✓

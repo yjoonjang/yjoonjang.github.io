@@ -15,7 +15,7 @@ No theme/layout changes. Demo content is preserved (additive approach).
 ## 2. Context
 
 The site is **already substantially customized** (not a fresh setup). Existing
-content matches an *older* version of the resume. This is a **sync + additive**
+content matches an _older_ version of the resume. This is a **sync + additive**
 task, not a from-scratch build.
 
 Constraints / decisions confirmed with the user:
@@ -96,16 +96,14 @@ three labeled sections, keeping the existing bib-search include:
 {% include bib_search.liquid %}
 
 <div class="publications">
+  <h2>Publications [Conference]</h2>
+  {% bibliography --query @*[category=conference]* --group_by none %}
 
-<h2>Publications [Conference]</h2>
-{% bibliography --query @*[category=conference]* --group_by none %}
+  <h2>Publications [Domestic Conference]</h2>
+  {% bibliography --query @*[category=domestic]* --group_by none %}
 
-<h2>Publications [Domestic Conference]</h2>
-{% bibliography --query @*[category=domestic]* --group_by none %}
-
-<h2>Preprint</h2>
-{% bibliography --query @*[category=preprint]* --group_by none %}
-
+  <h2>Preprint</h2>
+  {% bibliography --query @*[category=preprint]* --group_by none %}
 </div>
 ```
 
@@ -119,15 +117,15 @@ appear in the BibTeX popup. This is the only `_config.yml` change.
 
 ### 4.2 Content sync
 
-| File | Change |
-|---|---|
-| `_pages/about.md` | Rework the research paragraph to match resume **Research Summary**: dense/sparse/late-interaction retrieval, multilingual IR, RAG; venues SIGIR/ICLR/ACL/EMNLP; contributions to sentence-transformers & MTEB; "200+ GitHub stars and **1.3M+** cumulative Hugging Face downloads". Keep bio paragraph (NLP&AI Lab, Prof. Heuiseok Lim, Hongik double major) and the open-source list (keep FlagEmbedding & InstructKR). |
-| `_pages/opensource.md` | Add to Sentence-Transformers: **EmbedDistillLoss** (`PR #3665`). Add new section **InstructKR (2026)**: led Korean Reranker evaluation & leaderboard project — link `https://github.com/instructkr/reranker-simple-benchmark`. Keep existing FlagEmbedding section. |
-| `_pages/projects.md` | KURE bullet: `1.1M+` → **`1.3M+`**; align wording to resume (add WBL HF link `https://huggingface.co/NC-AI-consortium-VAETKI/VAETKI` if consistent with existing style). |
-| `_projects/kure.md` | `1.1M+ cumulative downloads` → **`1.3M+ cumulative downloads`**. |
-| `_data/cv.yml` | Full rework (see 4.3). |
-| `_pages/cv.md` | Remove the `cv_pdf:` front-matter line entirely (drops demo PDF button). Replace placeholder `description` with a real one. Set `nav: true` so CV appears in the navbar. Keep `cv_format: rendercv` and `toc.sidebar: left`. |
-| `_news/news_*.md` | Optional, additive: add news items for ICLR 2026 (Cross-Lingual Alignment), ACL 2026 (CLEAR), and HCLT 2025 Best Oral (KURE). Existing `news_1` (SIGIR 2026) and `news_2` (LEGALMIDM) unchanged. |
+| File                   | Change                                                                                                                                                                                                                                                                                                                                                                                                                   |
+| ---------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ |
+| `_pages/about.md`      | Rework the research paragraph to match resume **Research Summary**: dense/sparse/late-interaction retrieval, multilingual IR, RAG; venues SIGIR/ICLR/ACL/EMNLP; contributions to sentence-transformers & MTEB; "200+ GitHub stars and **1.3M+** cumulative Hugging Face downloads". Keep bio paragraph (NLP&AI Lab, Prof. Heuiseok Lim, Hongik double major) and the open-source list (keep FlagEmbedding & InstructKR). |
+| `_pages/opensource.md` | Add to Sentence-Transformers: **EmbedDistillLoss** (`PR #3665`). Add new section **InstructKR (2026)**: led Korean Reranker evaluation & leaderboard project — link `https://github.com/instructkr/reranker-simple-benchmark`. Keep existing FlagEmbedding section.                                                                                                                                                      |
+| `_pages/projects.md`   | KURE bullet: `1.1M+` → **`1.3M+`**; align wording to resume (add WBL HF link `https://huggingface.co/NC-AI-consortium-VAETKI/VAETKI` if consistent with existing style).                                                                                                                                                                                                                                                 |
+| `_projects/kure.md`    | `1.1M+ cumulative downloads` → **`1.3M+ cumulative downloads`**.                                                                                                                                                                                                                                                                                                                                                         |
+| `_data/cv.yml`         | Full rework (see 4.3).                                                                                                                                                                                                                                                                                                                                                                                                   |
+| `_pages/cv.md`         | Remove the `cv_pdf:` front-matter line entirely (drops demo PDF button). Replace placeholder `description` with a real one. Set `nav: true` so CV appears in the navbar. Keep `cv_format: rendercv` and `toc.sidebar: left`.                                                                                                                                                                                             |
+| `_news/news_*.md`      | Optional, additive: add news items for ICLR 2026 (Cross-Lingual Alignment), ACL 2026 (CLEAR), and HCLT 2025 Best Oral (KURE). Existing `news_1` (SIGIR 2026) and `news_2` (LEGALMIDM) unchanged.                                                                                                                                                                                                                         |
 
 ### 4.3 `_data/cv.yml` rework
 

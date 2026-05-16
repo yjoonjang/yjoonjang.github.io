@@ -16,13 +16,19 @@
             {% endif -%}
           >
             {% if site.data.venues[entry.abbr].url %}
-              <a href="{{ site.data.venues[entry.abbr].url }}">{{ entry.abbr }}</a>
+              <a href="{{ site.data.venues[entry.abbr].url }}"
+                ><strong>{{ entry.abbr }}</strong></a
+              >
             {% else %}
-              <div>{{- entry.abbr -}}</div>
+              <div>
+                <strong>{{- entry.abbr -}}</strong>
+              </div>
             {% endif %}
           </abbr>
         {% else %}
-          <abbr class="badge rounded w-100">{{ entry.abbr }}</abbr>
+          <abbr class="badge rounded w-100"
+            ><strong>{{ entry.abbr }}</strong></abbr
+          >
         {% endif %}
       {% endif %}
       {% if entry.preview %}
@@ -95,12 +101,10 @@
           {%- if forloop.last and author_array_limit == author_array_size %}and {% endif -%}
         {% endif %}
         {%- if author_is_self -%}
-          <strong
-            ><u>
-              {{- author.first }}
-              {{ author_last_html -}}
-            </u></strong
-          >
+          <u>
+            {{- author.first }}
+            {{ author_last_html -}}
+          </u>
         {%- else -%}
           {%- if coauthor_url -%}
             <a href="{{ coauthor_url }}">
@@ -193,7 +197,7 @@
     {% assign entrytype_text = entrytype | strip_html | strip %}
     {% capture periodical %}{{ entrytype }}{% if entrytype_text != "" and entryyear != "" %}, {% endif %}{{ entrymonth }}{{ entryyear }}{% endcapture %}
     <div class="periodical">
-      <strong>{{ periodical | strip }}</strong>
+      {{ periodical | strip }}
     </div>
     <div class="periodical">
       {{ entry.note | strip }}

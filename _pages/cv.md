@@ -2,7 +2,7 @@
 layout: cv
 permalink: /cv/
 title: CV
-nav: true
+nav: false
 nav_order: 5
 cv_format: rendercv # options: rendercv, jsonresume
 description: Curriculum Vitae of Youngjoon Jang — research, publications, open-source contributions, and projects in information retrieval and RAG.

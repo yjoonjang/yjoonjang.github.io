@@ -5,4 +5,4 @@ inline: true
 related_posts: false
 ---
 
-Our paper "CLEAR: Cross-Lingual Enhancement in Retrieval via Reverse-training" has been accepted to ACL 2026 🎉
+Our paper "CLEAR: Cross-Lingual Enhancement in Retrieval via Reverse-training" has been accepted to **ACL 2026** 🎉

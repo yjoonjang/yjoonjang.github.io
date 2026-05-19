@@ -89,8 +89,8 @@ layout: default
         <strong>KURE: Korea University Retrieval Embedding Model</strong>
         (<a href="https://github.com/nlpai-lab/KURE" target="_blank">GitHub</a> ·
         <a href="https://huggingface.co/nlpai-lab/KURE-v1" target="_blank">HF</a>)<br>
-        Flagship Korean retrieval project — SOTA dense retriever (1st on MTEB-ko-retrieval), 200+ GitHub stars and 1.3M+ cumulative Hugging Face
-        downloads. HCLT 2025 Best Oral Presentation.
+        Led the flagship Korean retrieval project — trained SOTA dense retriever (1st on MTEB-ko-retrieval), 200+ GitHub stars and 1.3M+ cumulative
+        Hugging Face downloads. Awarded Best Oral Presentation at HCLT 2025.
       </p>
 
       <p>
@@ -103,10 +103,24 @@ layout: default
       </p>
 
       <p>
+        <strong>PreRanker</strong>
+        (<a href="https://github.com/yjoonjang/PreRanker" target="_blank">GitHub</a> ·
+        <a href="https://huggingface.co/yjoonjang/preranker-v1" target="_blank">HF</a>)<br>
+        Trained a lightweight reranker for tool retrieval in LLM agents, narrowing candidate tools before downstream execution. Achieved a 3.1%
+        relative improvement in tool-retrieval Recall@10, enabling accurate candidate filtering for agent tool selection.
+      </p>
+
+      <p>
+        <strong>URACLE–Korea University Collaborative Research</strong><br>
+        Trained a Korean–English cross-lingual retrieval embedding model and analyzed language-pair trade-offs; used model merging to recover
+        monolingual retrieval while retaining cross-lingual retrieval gains. Published in the ACL 2026 MeLLM Workshop.
+      </p>
+
+      <p>
         <strong>WBL: World Best LLM Project</strong>
         (<a href="https://huggingface.co/NC-AI-consortium-VAETKI/VAETKI" target="_blank">HF</a>)<br>
         Led the data team: built a query-clarity tagging &amp; evaluation framework, and a reward-model-ensemble response-filtering pipeline for
-        large-scale alignment data.
+        large-scale training data.
       </p>
 
       <p>
@@ -116,21 +130,8 @@ layout: default
           target="_blank"
           >News</a
         >)<br>
-        End-to-end training recipe for a Korean legal-domain LLM, published as LEGALMIDM (ICLR 2026 Data-FM Workshop); directly contributed to KT's
-        $10.42M contract for the South Korean Supreme Court AI platform.
-      </p>
-
-      <p>
-        <strong>PreRanker</strong>
-        (<a href="https://github.com/yjoonjang/PreRanker" target="_blank">GitHub</a> ·
-        <a href="https://huggingface.co/yjoonjang/preranker-v1" target="_blank">HF</a>)<br>
-        Trained a lightweight reranker that narrows candidate tools, reducing tool-call scope for LLM agents.
-      </p>
-
-      <p>
-        <strong>URACLE–Korea University Collaborative Research</strong><br>
-        Trained a Korean–English cross-lingual retrieval model; used model merging to recover mono-lingual retrieval while retaining cross-lingual
-        retrieval gains. Published in the ACL 2026 MeLLM Workshop.
+        Developed an end-to-end training recipe for a Korean legal-domain LLM, published as LEGALMIDM (ICLR 2026 Data-FM Workshop); contributed to
+        KT's $10.42M contract for the South Korean Supreme Court AI platform.
       </p>
     </div>
     <hr>
@@ -172,10 +173,7 @@ layout: default
           <a href="https://github.com/embeddings-benchmark/mteb/pull/1388" target="_blank">Korean retrieval benchmark task (AutoRAGRetrieval)</a>.
         </li>
         <li>Improved <a href="https://github.com/embeddings-benchmark/mteb/pull/1526" target="_blank">OpenAI embedding wrapper stability</a>.</li>
-        <li>
-          Fixed <a href="https://github.com/embeddings-benchmark/mteb/pull/2481" target="_blank">NaN embeddings for Jasper models</a> (float16 →
-          bfloat16).
-        </li>
+        <li>Fixed <a href="https://github.com/embeddings-benchmark/mteb/pull/2481" target="_blank">NaN embeddings for Jasper models</a>.</li>
       </ul>
       <p>
         <a href="https://github.com/instructkr/reranker-simple-benchmark" target="_blank"><strong>InstructKR</strong></a>

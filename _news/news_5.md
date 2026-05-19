@@ -5,4 +5,4 @@ inline: true
 related_posts: false
 ---
 
-Our paper "KURE: Embedding Model for Korean-Specific Retrieval" received the Best Oral Presentation Award at **HCLT 2025** 🏆
+Our paper "KURE: Embedding Model for Korean-Specific Retrieval" received the Best Oral Presentation Award at **HCLT 2025** 🇰🇷

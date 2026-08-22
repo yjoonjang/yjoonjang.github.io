@@ -5,4 +5,4 @@ inline: true
 related_posts: false
 ---
 
-Our paper **MIMO**, **SHIFT**, **SemBridge** has been accepted to **EMNLP 2026** 🇭🇺
+Our papers **MIMO**, **SHIFT**, and **SemBridge** have been accepted to **EMNLP 2026** 🇭🇺

@@ -30,20 +30,20 @@ nav: false
 
 ---
 
+## URACLE-Korea University Collaborative Research
+
+- Trained Korean-English cross-lingual retrieval embedding model and analyzed language-pair trade-offs; used model merging to recover mono-lingual retrieval while retaining CLIR gains. [[Paper](https://arxiv.org/abs/2507.08480)]
+
+---
+
 ## KT-Korea University Collaborative Research (Korean Legal LLM)
 
 - Developed an end-to-end training recipe for a Korean legal-domain LLM; defined real-world judicial tasks, curated expert-written and synthetic alignment datasets, and optimized training strategies to preserve general capabilities.
 - This research directly contributed to KT winning a **$10.42 million contract** to build an AI platform for the South Korean Supreme Court. [[News](https://www.koreatimes.co.kr/business/tech-science/20250721/judiciary-meets-ai-kt-to-build-ai-platform-for-court-system)]
 - Published the training methodologies and data pipelines as **LEGALMIDM** at the ICLR 2026 Data-FM Workshop.
 
----
-
+{% comment %} PreRanker — hidden for now
 ## [PreRanker](https://github.com/yjoonjang/PreRanker) &nbsp; [GitHub](https://github.com/yjoonjang/PreRanker) \| [HuggingFace](https://huggingface.co/yjoonjang/preranker-v1)
 
 - Built a lightweight reranker to narrow down candidate tools, reducing tool-call scope for LLM agents.
-
----
-
-## URACLE-Korea University Collaborative Research
-
-- Trained Korean-English cross-lingual retrieval embedding model and analyzed language-pair trade-offs; used model merging to recover mono-lingual retrieval while retaining CLIR gains. [[Paper](https://arxiv.org/abs/2507.08480)]
+{% endcomment %}

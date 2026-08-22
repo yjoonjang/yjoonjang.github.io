@@ -392,9 +392,12 @@ ninja.data = [{
           section: "News",},{id: "news-our-paper-beyond-hard-negatives-the-importance-of-score-distribution-in-knowledge-distillation-for-dense-retrieval-has-been-accepted-to-sigir-2026",
           title: 'Our paper “Beyond Hard Negatives: The Importance of Score Distribution in Knowledge Distillation...',
           description: "",
-          section: "News",},{id: "projects-korean-colbert-amp-sparse-retrievers",
-          title: 'Korean ColBERT &amp;amp; Sparse Retrievers',
-          description: "SOTA Korean ColBERT and SPLADE variants for dense-sparse hybrid retrieval.",
+          section: "News",},{id: "news-our-papers-mimo-shift-and-sembridge-have-been-accepted-to-emnlp-2026",
+          title: 'Our papers MIMO, SHIFT, and SemBridge have been accepted to EMNLP 2026 🇭🇺...',
+          description: "",
+          section: "News",},{id: "projects-korean-sparse-amp-multi-vector-retrievers",
+          title: 'Korean Sparse &amp;amp; Multi-Vector Retrievers',
+          description: "SOTA Korean sparse and multi-vector models for dense-sparse hybrid retrieval.",
           section: "Projects",handler: () => {
               window.location.href = "/projects/colbert_splade/";
             },},{id: "projects-kt-korea-university-collaborative-research",

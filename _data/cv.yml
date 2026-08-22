@@ -9,7 +9,7 @@ cv:
     late-interaction retrieval, multilingual information retrieval, and
     retrieval-augmented generation. Published at SIGIR, ICLR, ACL, and EMNLP;
     led Korean retrieval models and benchmarks with 200+ GitHub stars and
-    1.3M+ cumulative Hugging Face downloads.
+    2,000,000+ cumulative Hugging Face downloads.
 
   social_networks:
     - network: GitHub
@@ -103,10 +103,10 @@ cv:
         highlights:
           - "Led the lab's flagship Korean retrieval project; trained a SOTA dense retriever (1st on MTEB-ko-retrieval, Aug. 2025)."
           - "Designed and maintained MTEB-ko-retrieval, a standardized public Korean IR leaderboard."
-          - "Open-sourced the framework: 200+ GitHub stars and 1.3M+ cumulative Hugging Face downloads (Best Oral, HCLT 2025)."
-      - name: "Korean ColBERT & Sparse Retrievers"
+          - "Open-sourced the framework: 200+ GitHub stars and 2,000,000+ cumulative Hugging Face downloads (Best Oral, HCLT 2025)."
+      - name: "Korean Sparse & Multi-Vector Retrievers"
         highlights:
-          - "Trained and open-sourced Korean ColBERT and SPLADE variants achieving SOTA among corresponding architectures (Feb. 2026)."
+          - "Trained and open-sourced Korean Sparse and Multi-Vector models achieving SOTA among corresponding architectures (Feb. 2026)."
           - "Provided optimized, reproducible pipelines advancing dense-sparse hybrid retrieval experiments."
       - name: "KT–Korea University Collaborative Research (Korean Legal LLM)"
         highlights:

@@ -18,14 +18,14 @@ nav: false
 
 - Led the lab's flagship Korean retrieval project; curated large-scale training datasets and trained a dense retriever that achieved **State-of-the-Art (1st place) on the MTEB-ko-retrieval leaderboard** (as of Aug. 2025).
 - Designed and maintained `MTEB-ko-retrieval`, establishing a comprehensive evaluation suite and standardized public leaderboard for the Korean IR community.
-- Open-sourced the framework, achieving **200+ GitHub stars and 1.3M+ cumulative downloads** on Hugging Face.
+- Open-sourced the framework, achieving **200+ GitHub stars and 2,000,000+ cumulative downloads** on Hugging Face.
 - **Awarded Best Oral Presentation at HCLT 2025.**
 
 ---
 
-## Korean ColBERT & Sparse Retrievers &nbsp; [colbert-ko-v1](https://huggingface.co/yjoonjang/colbert-ko-v1) \| [splade-ko-v1](https://huggingface.co/yjoonjang/splade-ko-v1) \| [inference-free-splade-ko-v1](https://huggingface.co/yjoonjang/inference-free-splade-ko-v1)
+## Korean Sparse & Multi-Vector Retrievers &nbsp; [colbert-ko-v1](https://huggingface.co/yjoonjang/colbert-ko-v1) \| [splade-ko-v1](https://huggingface.co/yjoonjang/splade-ko-v1) \| [inference-free-splade-ko-v1](https://huggingface.co/yjoonjang/inference-free-splade-ko-v1)
 
-- Trained and open-sourced Korean ColBERT and SPLADE variants, achieving **State-of-the-Art performance among corresponding architectures** (as of Feb. 2026) on the Korean Retrieval Benchmark.
+- Trained and open-sourced Korean Sparse and Multi-Vector models, achieving **State-of-the-Art performance among corresponding architectures** (as of Feb. 2026) on the Korean Retrieval Benchmark.
 - Outperformed existing multilingual and Korean fine-tuned models, providing highly optimized, reproducible pipelines to advance dense-sparse hybrid retrieval experiments.
 
 ---

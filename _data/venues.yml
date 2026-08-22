@@ -30,6 +30,14 @@
   color: "#ecd4ec"
 
 # EMNLP — pale peach
+"EMNLP 2026":
+  url: https://2026.emnlp.org/
+  color: "#f6dcc6"
+
+"EMNLP 2026 Findings":
+  url: https://2026.emnlp.org/
+  color: "#f6dcc6"
+
 "EMNLP 2024":
   url: https://2024.emnlp.org/
   color: "#f6dcc6"

@@ -43,7 +43,9 @@ nav: false
 - Published the training methodologies and data pipelines as **LEGALMIDM** at the ICLR 2026 Data-FM Workshop.
 
 {% comment %} PreRanker — hidden for now
+
 ## [PreRanker](https://github.com/yjoonjang/PreRanker) &nbsp; [GitHub](https://github.com/yjoonjang/PreRanker) \| [HuggingFace](https://huggingface.co/yjoonjang/preranker-v1)
 
 - Built a lightweight reranker to narrow down candidate tools, reducing tool-call scope for LLM agents.
+
 {% endcomment %}

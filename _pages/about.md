@@ -8,8 +8,6 @@ profile:
   align: right
   image: prof_pic.jpg
   image_circular: true
-  more_info: >
-    <p style="text-align: center;">yjoonjang34@gmail.com</p>
 
 selected_papers: false
 social: true

@@ -420,9 +420,14 @@ ninja.data = [{
           description: "Lightweight reranker to narrow down candidate tools for LLM agents.",
           section: "Projects",handler: () => {
               window.location.href = "/projects/preranker/";
+            },},{id: "projects-reviewsearch",
+          title: 'ReviewSearch',
+          description: "Search engine over 205,988 real peer reviews and their author rebuttals.",
+          section: "Projects",handler: () => {
+              window.location.href = "/projects/reviewsearch/";
             },},{id: "projects-uracle-korea-university-collaborative-research",
           title: 'URACLE-Korea University Collaborative Research',
-          description: "Korean-English cross-lingual retrieval embedding model with model merging.",
+          description: "Korean-English cross-lingual retriever with model merging.",
           section: "Projects",handler: () => {
               window.location.href = "/projects/uracle/";
             },},{id: "projects-wbl-world-best-llm",

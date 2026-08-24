@@ -23,16 +23,24 @@ nav: false
 
 ---
 
-## Korean Sparse & Multi-Vector Retrievers &nbsp; [colbert-ko-v1](https://huggingface.co/yjoonjang/colbert-ko-v1) \| [splade-ko-v1](https://huggingface.co/yjoonjang/splade-ko-v1) \| [inference-free-splade-ko-v1](https://huggingface.co/yjoonjang/inference-free-splade-ko-v1)
+## Korean Sparse & Multi-Vector Retrievers &nbsp; [HF](https://huggingface.co/collections/yjoonjang/retrieval-models-ive-trained)
 
 - Trained and open-sourced Korean Sparse and Multi-Vector models, achieving **State-of-the-Art performance among corresponding architectures** (as of Feb. 2026) on the Korean Retrieval Benchmark.
 - Outperformed existing multilingual and Korean fine-tuned models, providing highly optimized, reproducible pipelines to advance dense-sparse hybrid retrieval experiments.
 
 ---
 
+## ReviewSearch &nbsp; [Blog](https://medium.com/@yjoonjang/introducing-rebuttal-skills-reviewsearch-rebuttaldraft-3fec218b78e9) \| [GitHub](https://github.com/yjoonjang/rebuttal-skills) \| [Demo](https://yjoonjang-reviewsearch.hf.space/)
+
+- Built a search engine over **205,988 real peer reviews and their author rebuttals** collected from ICLR, ICML, NeurIPS, and COLM, so authors can look up how a given reviewer concern was actually answered rather than guess at a convincing reply.
+- Trained a hybrid retriever for the domain — a fine-tuned dense encoder and a sparse encoder fused with Reciprocal Rank Fusion — and released both encoders on Hugging Face.
+- Shipped it as the grounding layer for `RebuttalDraft` in the `rebuttal-skills` agent plugin, which drafts per-reviewer rebuttals and runs the supporting experiments in the author's own repository.
+
+---
+
 ## URACLE-Korea University Collaborative Research
 
-- Trained Korean-English cross-lingual retrieval embedding model and analyzed language-pair trade-offs; used model merging to recover mono-lingual retrieval while retaining CLIR gains. [[Paper](https://arxiv.org/abs/2507.08480)]
+- Trained a Korean-English cross-lingual retriever and analyzed language-pair trade-offs; used model merging to recover mono-lingual retrieval while retaining CLIR gains. [[Paper](https://arxiv.org/abs/2507.08480)]
 
 ---
 

@@ -11,4 +11,4 @@ Trained and open-sourced Korean Sparse and Multi-Vector models, achieving **Stat
 - Outperformed existing multilingual and Korean fine-tuned models
 - Provided highly optimized, reproducible pipelines to advance dense-sparse hybrid retrieval experiments
 
-[colbert-ko-v1](https://huggingface.co/yjoonjang/colbert-ko-v1) | [splade-ko-v1](https://huggingface.co/yjoonjang/splade-ko-v1) | [inference-free-splade-ko-v1](https://huggingface.co/yjoonjang/inference-free-splade-ko-v1)
+[HF](https://huggingface.co/collections/yjoonjang/retrieval-models-ive-trained)

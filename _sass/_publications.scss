@@ -23,6 +23,14 @@
     }
   }
 
+  // Divide the Conference / Domestic / Preprint groups without the full-weight
+  // <hr> that separates top-level sections.
+  h2:not(:first-child) {
+    border-top: 1px solid var(--global-divider-color);
+    padding-top: 2rem;
+    margin-top: 2.5rem;
+  }
+
   h2.bibliography {
     color: var(--global-divider-color);
     border-top: 1px solid var(--global-divider-color);

@@ -32,9 +32,9 @@ nav: false
 
 ## ReviewSearch &nbsp; [Blog](https://medium.com/@yjoonjang/introducing-rebuttal-skills-reviewsearch-rebuttaldraft-3fec218b78e9) \| [GitHub](https://github.com/yjoonjang/rebuttal-skills) \| [Demo](https://yjoonjang-reviewsearch.hf.space/)
 
-- Built a search engine over **205,988 real peer reviews and their author rebuttals** collected from ICLR, ICML, NeurIPS, and COLM, so authors can look up how a given reviewer concern was actually answered rather than guess at a convincing reply.
-- Trained a hybrid retriever for the domain — a fine-tuned dense encoder and a sparse encoder fused with Reciprocal Rank Fusion — and released both encoders on Hugging Face.
-- Shipped it as the grounding layer for `RebuttalDraft` in the `rebuttal-skills` agent plugin, which drafts per-reviewer rebuttals and runs the supporting experiments in the author's own repository.
+- Built a search engine over **205,988 real peer reviews and rebuttals** from ICLR, ICML, NeurIPS, and COLM, so agents can ground a rebuttal draft in how authors actually answered the same concern.
+- Trained a hybrid retriever for the domain: a fine-tuned dense encoder and a sparse encoder fused with Reciprocal Rank Fusion.
+- Shipped it as the grounding layer for `RebuttalDraft` in the `rebuttal-skills` agent plugin.
 
 ---
 

@@ -110,7 +110,7 @@ cv:
           - "Provided optimized, reproducible pipelines advancing dense-sparse hybrid retrieval experiments."
       - name: "ReviewSearch"
         highlights:
-          - "Built a search engine over 205,988 real peer reviews and their author rebuttals from ICLR, ICML, NeurIPS, and COLM."
+          - "Built a search engine over 205,988 real peer reviews and rebuttals so agents can ground a rebuttal draft in real precedent."
           - "Trained a hybrid retriever for the domain: a fine-tuned dense encoder and a sparse encoder fused with Reciprocal Rank Fusion."
           - "Shipped it as the grounding layer for RebuttalDraft in the rebuttal-skills agent plugin."
       - name: "KT–Korea University Collaborative Research (Korean Legal LLM)"

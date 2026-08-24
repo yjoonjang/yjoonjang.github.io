@@ -108,6 +108,11 @@ cv:
         highlights:
           - "Trained and open-sourced Korean Sparse and Multi-Vector models achieving SOTA among corresponding architectures (Feb. 2026)."
           - "Provided optimized, reproducible pipelines advancing dense-sparse hybrid retrieval experiments."
+      - name: "ReviewSearch"
+        highlights:
+          - "Built a search engine over 205,988 real peer reviews and their author rebuttals from ICLR, ICML, NeurIPS, and COLM."
+          - "Trained a hybrid retriever for the domain: a fine-tuned dense encoder and a sparse encoder fused with Reciprocal Rank Fusion."
+          - "Shipped it as the grounding layer for RebuttalDraft in the rebuttal-skills agent plugin."
       - name: "KT–Korea University Collaborative Research (Korean Legal LLM)"
         highlights:
           - "Developed an end-to-end training recipe for a Korean legal-domain LLM with expert-written and synthetic alignment data."
@@ -118,7 +123,7 @@ cv:
           - "Built a lightweight reranker to narrow candidate tools, reducing tool-call scope for LLM agents."
       - name: "URACLE–Korea University Collaborative Research"
         highlights:
-          - "Trained a Korean–English cross-lingual retrieval model; used model merging to recover mono-lingual retrieval while retaining CLIR gains."
+          - "Trained a Korean–English cross-lingual retriever; used model merging to recover mono-lingual retrieval while retaining CLIR gains."
 
     Skills:
       - name: "Languages"

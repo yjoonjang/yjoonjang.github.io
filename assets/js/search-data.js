@@ -422,7 +422,7 @@ ninja.data = [{
               window.location.href = "/projects/preranker/";
             },},{id: "projects-reviewsearch",
           title: 'ReviewSearch',
-          description: "Search engine over 205,988 real peer reviews and their author rebuttals.",
+          description: "Search engine over 205,988 real peer reviews and rebuttals.",
           section: "Projects",handler: () => {
               window.location.href = "/projects/reviewsearch/";
             },},{id: "projects-uracle-korea-university-collaborative-research",

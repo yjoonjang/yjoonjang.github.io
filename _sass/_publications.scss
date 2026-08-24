@@ -39,6 +39,21 @@
     li {
       margin-bottom: 1rem;
 
+      // Bootstrap's grid steps from 25% (col-sm-3) straight to 33% (col-sm-4);
+      // 28% gives the badge and preview a little more room without crowding
+      // the entry text. Below the sm breakpoint both columns stay full width.
+      @media (min-width: 576px) {
+        .row > .abbr {
+          flex: 0 0 28%;
+          max-width: 28%;
+        }
+
+        .row > .abbr + div {
+          flex: 0 0 72%;
+          max-width: 72%;
+        }
+      }
+
       .preview {
         display: inline-block;
       }

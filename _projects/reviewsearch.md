@@ -7,7 +7,7 @@ category: research
 github: https://github.com/yjoonjang/rebuttal-skills
 ---
 
-Built a search engine over **205,988 real peer reviews and rebuttals** from ICLR, ICML, NeurIPS, and COLM, so agents can ground a rebuttal draft in how authors actually answered the same concern.
+Built and deployed a search engine over **205,988 real peer reviews and rebuttals** for agents, so that a rebuttal draft is grounded in how authors actually answered the same concern.
 
 - Trained a hybrid retriever for the domain: a fine-tuned dense encoder and a sparse encoder fused with Reciprocal Rank Fusion
 - Shipped it as the grounding layer for `RebuttalDraft` in the `rebuttal-skills` agent plugin

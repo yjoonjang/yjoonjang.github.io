@@ -18,7 +18,12 @@
   <!-- Body -->
   <body class="{% if site.navbar_fixed %}fixed-top-nav{% endif %} {% unless site.footer_fixed %}sticky-bottom-footer{% endunless %}">
     <!-- Header -->
-    {% include header.liquid %}
+    {% comment %}
+      Navbar hidden: every page but About sets nav: false, so the bar held a
+      single redundant link. Uncomment to bring it back (with it, the theme
+      toggle and the ctrl-k search).
+      {% include header.liquid %}
+    {% endcomment %}
 
     <!-- Content -->
     <div class="container mt-5" role="main">

@@ -52,13 +52,13 @@
       // the entry text. Below the sm breakpoint both columns stay full width.
       @media (min-width: 576px) {
         .row > .abbr {
-          flex: 0 0 28%;
-          max-width: 28%;
+          flex: 0 0 26%;
+          max-width: 26%;
         }
 
         .row > .abbr + div {
-          flex: 0 0 72%;
-          max-width: 72%;
+          flex: 0 0 74%;
+          max-width: 74%;
         }
       }
 

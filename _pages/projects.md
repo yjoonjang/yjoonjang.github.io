@@ -14,11 +14,11 @@ nav: false
 
 ---
 
-## [KURE: Korea University Retrieval Embedding Model](https://github.com/nlpai-lab/KURE) &nbsp; [GitHub](https://github.com/nlpai-lab/KURE) \| [HuggingFace](https://huggingface.co/nlpai-lab/KURE-v1)
+## [KURE: Korea University Retrieval Embedding Model](https://github.com/nlpai-lab/KURE) &nbsp; [GitHub](https://github.com/nlpai-lab/KURE) \| [HuggingFace](https://huggingface.co/collections/nlpai-lab/kure)
 
 - Led the lab's flagship Korean retrieval project; curated large-scale training datasets and trained a dense retriever that achieved **State-of-the-Art (1st place) on the MTEB-ko-retrieval leaderboard** (as of Aug. 2025).
 - Designed and maintained `MTEB-ko-retrieval`, establishing a comprehensive evaluation suite and standardized public leaderboard for the Korean IR community.
-- Open-sourced the framework, achieving **200+ GitHub stars and 2,000,000+ cumulative downloads** on Hugging Face.
+- Open-sourced the framework, achieving **200+ GitHub stars and 2.3M+ cumulative downloads** on Hugging Face.
 - **Awarded Best Oral Presentation at HCLT 2025.**
 
 ---
@@ -32,7 +32,7 @@ nav: false
 
 ## ReviewSearch &nbsp; [Blog](https://medium.com/@yjoonjang/introducing-rebuttal-skills-reviewsearch-rebuttaldraft-3fec218b78e9) \| [GitHub](https://github.com/yjoonjang/rebuttal-skills) \| [Demo](https://yjoonjang-reviewsearch.hf.space/)
 
-- Built a search engine over **205,988 real peer reviews and rebuttals** from ICLR, ICML, NeurIPS, and COLM, so agents can ground a rebuttal draft in how authors actually answered the same concern.
+- Built and deployed a search engine over **205,988 real peer reviews and rebuttals** for agents, so that a rebuttal draft is grounded in how authors actually answered the same concern.
 - Trained a hybrid retriever for the domain: a fine-tuned dense encoder and a sparse encoder fused with Reciprocal Rank Fusion.
 - Shipped it as the grounding layer for `RebuttalDraft` in the `rebuttal-skills` agent plugin.
 

@@ -88,9 +88,9 @@ layout: default
       <p>
         <strong>KURE: Korea University Retrieval Embedding Model</strong>
         (<a href="https://github.com/nlpai-lab/KURE" target="_blank">GitHub</a> ·
-        <a href="https://huggingface.co/nlpai-lab/KURE-v1" target="_blank">HF</a>)<br>
-        Led the flagship Korean retrieval project: trained SOTA dense retriever (1st on MTEB-ko-retrieval), 200+ GitHub stars and 2,000,000+
-        cumulative Hugging Face downloads. Awarded Best Oral Presentation at HCLT 2025.
+        <a href="https://huggingface.co/collections/nlpai-lab/kure" target="_blank">HF</a>)<br>
+        Led the flagship Korean retrieval project: trained SOTA dense retriever (1st on MTEB-ko-retrieval), 200+ GitHub stars and 2.3M+ cumulative
+        Hugging Face downloads. Awarded Best Oral Presentation at HCLT 2025.
       </p>
 
       <p>
@@ -116,8 +116,8 @@ layout: default
         (<a href="https://medium.com/@yjoonjang/introducing-rebuttal-skills-reviewsearch-rebuttaldraft-3fec218b78e9" target="_blank">Blog</a> ·
         <a href="https://github.com/yjoonjang/rebuttal-skills" target="_blank">GitHub</a> ·
         <a href="https://yjoonjang-reviewsearch.hf.space/" target="_blank">Demo</a>)<br>
-        Built a search engine over 205,988 real peer reviews and rebuttals, so agents can ground a rebuttal draft in how authors actually answered the
-        same concern.
+        Built and deployed a search engine over 205,988 real peer reviews and rebuttals for agents, so that a rebuttal draft is grounded in how
+        authors actually answered the same concern.
       </p>
 
       <p>
@@ -149,52 +149,58 @@ layout: default
     <!-- Open Source Contributions -->
     <h2 id="opensource"><strong>Open Source Contributions</strong></h2>
     <div style="margin-top: 1rem;">
-      <p>
-        <a href="https://github.com/UKPLab/sentence-transformers" target="_blank"><strong>Sentence-Transformers</strong></a>
-      </p>
+      <div style="display: flex; justify-content: space-between; align-items: baseline; flex-wrap: wrap; gap: 0.5rem;">
+        <strong><a href="https://github.com/UKPLab/sentence-transformers" target="_blank">Sentence-Transformers</a></strong>
+        <span class="text-muted">2025 – 2026</span>
+      </div>
       <ul>
         <li>
-          Extended the cross-encoder training stack with classic learning-to-rank losses (<a
-            href="https://github.com/tomaarsen/sentence-transformers/pull/6"
-            target="_blank"
-            >RankNetLoss, ListMLELoss</a
-          >, <a href="https://github.com/tomaarsen/sentence-transformers/pull/7" target="_blank">Position-Aware ListMLELoss</a>).
+          Extended the cross-encoder training stack with classic learning-to-rank losses.
+          <a href="https://github.com/tomaarsen/sentence-transformers/pull/6" target="_blank">[PR #6]</a>
+          <a href="https://github.com/tomaarsen/sentence-transformers/pull/7" target="_blank">[PR #7]</a>
         </li>
         <li>
-          Implemented <a href="https://github.com/huggingface/sentence-transformers/pull/3665" target="_blank">EmbedDistillLoss</a>
-          for direct embedding-level knowledge distillation.
+          Implemented EmbedDistillLoss to support direct embedding-level knowledge distillation.
+          <a href="https://github.com/huggingface/sentence-transformers/pull/3665" target="_blank">[PR #3665]</a>
         </li>
         <li>
-          Introduced
-          <a href="https://github.com/huggingface/sentence-transformers/pull/3667" target="_blank">hardness-weighted contrastive learning</a>
-          for hard negatives.
+          Introduced hardness-weighted contrastive learning to up-weight informative hard negatives.
+          <a href="https://github.com/huggingface/sentence-transformers/pull/3667" target="_blank">[PR #3667]</a>
         </li>
         <li>
-          Implemented <a href="https://github.com/huggingface/sentence-transformers/pull/3670" target="_blank">CachedSpladeLoss</a>
-          for memory-efficient SPLADE training.
+          Implemented CachedSpladeLoss for gradient-cache compatible, memory-efficient SPLADE training.
+          <a href="https://github.com/huggingface/sentence-transformers/pull/3670" target="_blank">[PR #3670]</a>
         </li>
       </ul>
-      <p>
-        <a href="https://github.com/embeddings-benchmark/mteb" target="_blank"><strong>MTEB (Massive Text Embedding Benchmark)</strong></a>
-      </p>
+      <div style="display: flex; justify-content: space-between; align-items: baseline; flex-wrap: wrap; gap: 0.5rem;">
+        <strong><a href="https://github.com/embeddings-benchmark/mteb" target="_blank">MTEB (Massive Text Embeddings Benchmark)</a></strong>
+        <span class="text-muted">2024 – 2025</span>
+      </div>
       <ul>
         <li>
-          Added a
-          <a href="https://github.com/embeddings-benchmark/mteb/pull/1388" target="_blank">Korean retrieval benchmark task (AutoRAGRetrieval)</a>.
+          Added a Korean retrieval benchmark task to expand multilingual retrieval evaluation.
+          <a href="https://github.com/embeddings-benchmark/mteb/pull/1388" target="_blank">[PR #1388]</a>
         </li>
-        <li>Improved <a href="https://github.com/embeddings-benchmark/mteb/pull/1526" target="_blank">OpenAI embedding wrapper stability</a>.</li>
-        <li>Fixed <a href="https://github.com/embeddings-benchmark/mteb/pull/2481" target="_blank">NaN embeddings for Jasper models</a>.</li>
+        <li>
+          Improved stability of the OpenAI embeddings by adding sentence trimming.
+          <a href="https://github.com/embeddings-benchmark/mteb/pull/1526" target="_blank">[PR #1526]</a>
+        </li>
+        <li>
+          Fixed NaN embeddings for Jasper models by switching model precision.
+          <a href="https://github.com/embeddings-benchmark/mteb/pull/2481" target="_blank">[PR #2481]</a>
+        </li>
       </ul>
-      <p>
-        <a href="https://github.com/instructkr/reranker-simple-benchmark" target="_blank"><strong>InstructKR</strong></a>
-      </p>
+      <div style="display: flex; justify-content: space-between; align-items: baseline; flex-wrap: wrap; gap: 0.5rem;">
+        <strong><a href="https://github.com/instructkr" target="_blank">InstructKR</a></strong>
+        <span class="text-muted">2026</span>
+      </div>
       <ul>
         <li>
-          Led the <a href="https://github.com/instructkr/reranker-simple-benchmark" target="_blank">Korean Reranker evaluation and leaderboard</a>
-          project.
+          Led the Korean Reranker evaluation and leaderboard project.
+          <a href="https://github.com/instructkr/reranker-simple-benchmark" target="_blank">[GitHub]</a>
         </li>
       </ul>
-      <!--
+      {% comment %}
         FlagEmbedding contribution hidden per request (minor contribution)
         <p>
           <a href="https://github.com/FlagOpen/FlagEmbedding" target="_blank"><strong>FlagEmbedding</strong></a>
@@ -202,13 +208,13 @@ layout: default
         <ul>
           <li>Fixed a <a href="https://github.com/FlagOpen/FlagEmbedding/issues/1170" target="_blank">knowledge-distillation training bug</a>.</li>
         </ul>
-      -->
+      {% endcomment %}
     </div>
     <hr>
 
     <!-- Publications -->
     <div class="publications">
-      <h2 id="publications"><strong>Publications [Conference]</strong></h2>
+      <h2 id="publications"><strong>Publications [International Conference]</strong></h2>
       {% bibliography --query @*[category=conference]* --group_by none %}
 
       <h2><strong>Publications [Domestic Conference]</strong></h2>

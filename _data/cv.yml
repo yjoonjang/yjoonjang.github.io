@@ -9,7 +9,7 @@ cv:
     late-interaction retrieval, multilingual information retrieval, and
     retrieval-augmented generation. Published at SIGIR, ICLR, ACL, and EMNLP;
     led Korean retrieval models and benchmarks with 200+ GitHub stars and
-    2,000,000+ cumulative Hugging Face downloads.
+    2.3M+ cumulative Hugging Face downloads.
 
   social_networks:
     - network: GitHub
@@ -82,14 +82,14 @@ cv:
         start_date: 2024
         end_date: 2025
         highlights:
-          - "Added a Korean retrieval benchmark task (AutoRAGRetrieval) and polished task metadata and registration (PR #1388)."
-          - "Improved stability of the OpenAI embedding wrapper with sentence trimming and tighter dependency handling (PR #1526)."
+          - "Added a Korean retrieval benchmark task to expand multilingual retrieval evaluation (PR #1388)."
+          - "Improved stability of the OpenAI embeddings by adding sentence trimming (PR #1526)."
           - "Fixed NaN embeddings for Jasper models by switching from float16 to bfloat16 (PR #2481)."
       - name: "InstructKR"
         start_date: 2026
         end_date: 2026
         highlights:
-          - "Led the Korean Reranker evaluation and leaderboard project, establishing a standardized Korean benchmark suite for text reranking models."
+          - "Led the Korean Reranker evaluation and leaderboard project."
 
     Projects:
       - name: "WBL: World Best LLM Project"
@@ -103,14 +103,14 @@ cv:
         highlights:
           - "Led the lab's flagship Korean retrieval project; trained a SOTA dense retriever (1st on MTEB-ko-retrieval, Aug. 2025)."
           - "Designed and maintained MTEB-ko-retrieval, a standardized public Korean IR leaderboard."
-          - "Open-sourced the framework: 200+ GitHub stars and 2,000,000+ cumulative Hugging Face downloads (Best Oral, HCLT 2025)."
+          - "Open-sourced the framework: 200+ GitHub stars and 2.3M+ cumulative Hugging Face downloads (Best Oral, HCLT 2025)."
       - name: "Korean Sparse & Multi-Vector Retrievers"
         highlights:
           - "Trained and open-sourced Korean Sparse and Multi-Vector models achieving SOTA among corresponding architectures (Feb. 2026)."
           - "Provided optimized, reproducible pipelines advancing dense-sparse hybrid retrieval experiments."
       - name: "ReviewSearch"
         highlights:
-          - "Built a search engine over 205,988 real peer reviews and rebuttals so agents can ground a rebuttal draft in real precedent."
+          - "Built and deployed a search engine over 205,988 real peer reviews and rebuttals for agents, so that a rebuttal draft is grounded in real precedent."
           - "Trained a hybrid retriever for the domain: a fine-tuned dense encoder and a sparse encoder fused with Reciprocal Rank Fusion."
           - "Shipped it as the grounding layer for RebuttalDraft in the rebuttal-skills agent plugin."
       - name: "KT–Korea University Collaborative Research (Korean Legal LLM)"

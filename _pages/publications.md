@@ -15,7 +15,7 @@ nav_order: 2
 
 <div class="publications">
 
-<h2>Publications [Conference]</h2>
+<h2>Publications [International Conference]</h2>
 
 {% bibliography --query @*[category=conference]* --group_by none %}
 

@@ -6,6 +6,7 @@ title: blank # the website title (if blank, full name will be used instead)
 first_name: Youngjoon
 middle_name:
 last_name: Jang
+timezone: Asia/Seoul # news/post dates are written in +0900; without this the build renders them a day early in UTC
 contact_note:
 description: >
   NLP researcher focusing on Information Retrieval and RAG systems.

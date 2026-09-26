@@ -7,6 +7,11 @@
   url: https://sigir2026.org/
   color: "#bfe3e0"
 
+# NeurIPS — pale rose (from the red of the Australian flag, host country)
+"NeurIPS 2026 E&D":
+  url: https://neurips.cc/Conferences/2026
+  color: "#f5cdd3"
+
 # ICLR — pale periwinkle
 "ICLR 2026":
   url: https://iclr.cc/Conferences/2026

@@ -398,19 +398,14 @@ ninja.data = [{
           section: "News",},{id: "news-our-paper-mlaire-multilingual-language-aware-information-retrieval-evaluation-protocol-has-been-accepted-to-neurips-2026-evaluations-amp-amp-datasets-e-amp-amp-d-track",
           title: 'Our paper “MLAIRE: Multilingual Language-Aware Information Retrieval Evaluation Protocol” has been accepted to...',
           description: "",
-          section: "News",},{id: "projects-korean-sparse-amp-multi-vector-retrievers",
-          title: 'Korean Sparse &amp;amp; Multi-Vector Retrievers',
-          description: "SOTA Korean sparse and multi-vector models for dense-sparse hybrid retrieval.",
-          section: "Projects",handler: () => {
-              window.location.href = "/projects/colbert_splade/";
-            },},{id: "projects-kt-korea-university-collaborative-research",
+          section: "News",},{id: "projects-kt-korea-university-collaborative-research",
           title: 'KT-Korea University Collaborative Research',
           description: "Korean legal domain LLM — contributed to KT&#39;s $10.42M Supreme Court AI contract.",
           section: "Projects",handler: () => {
               window.location.href = "/projects/kt_legal/";
-            },},{id: "projects-kure",
-          title: 'KURE',
-          description: "SOTA Korean retrieval embedding model — 1st place on MTEB-ko-retrieval leaderboard.",
+            },},{id: "projects-",
+          title: '',
+          description: "",
           section: "Projects",handler: () => {
               window.location.href = "/projects/kure/";
             },},{id: "projects-open-source-contributions",

@@ -14,19 +14,12 @@ nav: false
 
 ---
 
-## [KURE: Korea University Retrieval Embedding Model](https://github.com/nlpai-lab/KURE) &nbsp; [GitHub](https://github.com/nlpai-lab/KURE) \| [HuggingFace](https://huggingface.co/collections/nlpai-lab/kure)
+## [KURE: Korea University Retrieval Models](https://github.com/nlpai-lab/KURE) &nbsp; [GitHub](https://github.com/nlpai-lab/KURE) \| [HF](https://huggingface.co/collections/nlpai-lab/kure) \| [API](https://kure.kullm.ai/)
 
-- Led the lab's flagship Korean retrieval project; curated large-scale training datasets and trained a dense retriever that achieved **State-of-the-Art (1st place) on the MTEB-ko-retrieval leaderboard** (as of Aug. 2025).
-- Designed and maintained `MTEB-ko-retrieval`, establishing a comprehensive evaluation suite and standardized public leaderboard for the Korean IR community.
-- Open-sourced the framework, achieving **200+ GitHub stars and 2.3M+ cumulative downloads** on Hugging Face.
-- **Awarded Best Oral Presentation at HCLT 2025.**
-
----
-
-## Korean Sparse & Multi-Vector Retrievers &nbsp; [HF](https://huggingface.co/collections/yjoonjang/retrieval-models-ive-trained)
-
-- Trained and open-sourced Korean Sparse and Multi-Vector models, achieving **State-of-the-Art performance among corresponding architectures** (as of Feb. 2026) on the Korean Retrieval Benchmark.
-- Outperformed existing multilingual and Korean fine-tuned models, providing highly optimized, reproducible pipelines to advance dense-sparse hybrid retrieval experiments.
+- Led the lab's flagship Korean-English retrieval project, built the MTEB-Ko-Retrieval Leaderboard, and open-sourced the model family and training/evaluation code, reaching **250+ GitHub stars**.
+- **Dense & Multi-Vector:** Developed KURE-v1, KURE-v2, and KURE-v3. KURE-v1 and KURE-v2 both ranked **1st on the leaderboard** (as of Aug. 2025 and Oct. 2026, respectively). KURE-v1 surpassed **3M downloads**, KURE-v2, a multi-vector model, outperforms 8B dense models while being 50× smaller, and KURE-v3 outperforms Qwen3-Embedding-8B while being 7× smaller and is served through a public API.
+- **Sparse:** Developed KURE-Sparse-{base, nano}, achieving state-of-the-art Korean sparse retrieval performance overall and under 0.5B parameters, respectively. The base model also outperforms 8B dense models.
+- **Reranker:** Developed KURE-Reranker-{base, nano}, achieving state-of-the-art Korean reranking performance under 4B and 1B parameters, respectively. The 149M nano delivers 19.5× the throughput of Qwen3-Reranker-4B with only a 1.5-point gap in nDCG@10.
 
 ---
 
@@ -40,13 +33,13 @@ nav: false
 
 ## URACLE-Korea University Collaborative Research
 
-- Trained a Korean-English cross-lingual retriever and analyzed language-pair trade-offs; used model merging to recover mono-lingual retrieval while retaining CLIR gains. [[Paper](https://arxiv.org/abs/2507.08480)]
+- Trained a Korean-English cross-lingual retriever and analyzed language-pair trade-offs. Used model merging to recover mono-lingual retrieval while retaining CLIR gains. [[Paper](https://arxiv.org/abs/2507.08480)]
 
 ---
 
 ## KT-Korea University Collaborative Research (Korean Legal LLM)
 
-- Developed an end-to-end training recipe for a Korean legal-domain LLM; defined real-world judicial tasks, curated expert-written and synthetic alignment datasets, and optimized training strategies to preserve general capabilities.
+- Developed an end-to-end training recipe for a Korean legal-domain LLM. Defined real-world judicial tasks, curated expert-written and synthetic alignment datasets, and optimized training strategies to preserve general capabilities.
 - This research directly contributed to KT winning a **$10.42 million contract** to build an AI platform for the South Korean Supreme Court. [[News](https://www.koreatimes.co.kr/business/tech-science/20250721/judiciary-meets-ai-kt-to-build-ai-platform-for-court-system)]
 - Published the training methodologies and data pipelines as **LEGALMIDM** at the ICLR 2026 Data-FM Workshop.
 

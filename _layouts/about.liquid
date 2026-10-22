@@ -86,19 +86,22 @@ layout: default
     <h2 id="projects"><strong>Projects</strong></h2>
     <div style="margin-top: 1rem;">
       <p>
-        <strong>KURE: Korea University Retrieval Embedding Model</strong>
+        <strong>KURE: Korea University Retrieval Models</strong>
         (<a href="https://github.com/nlpai-lab/KURE" target="_blank">GitHub</a> ·
-        <a href="https://huggingface.co/collections/nlpai-lab/kure" target="_blank">HF</a>)<br>
-        Led the flagship Korean retrieval project: trained SOTA dense retriever (1st on MTEB-ko-retrieval), 200+ GitHub stars and 2.3M+ cumulative
-        Hugging Face downloads. Awarded Best Oral Presentation at HCLT 2025.
+        <a href="https://huggingface.co/collections/nlpai-lab/kure" target="_blank">HF</a> ·
+        <a href="https://kure.kullm.ai/" target="_blank">API</a>)<br>
+        Led the lab's flagship Korean–English retrieval project: built the MTEB-Ko-Retrieval leaderboard and open-sourced the model family with its
+        training and evaluation code (250+ GitHub stars).
       </p>
-
-      <p>
-        <strong>Korean Sparse &amp; Multi-Vector Retrievers</strong>
-        (<a href="https://huggingface.co/collections/yjoonjang/retrieval-models-ive-trained" target="_blank">HF</a>)<br>
-        Trained and open-sourced Korean Sparse and Multi-Vector models achieving SOTA among corresponding architectures on the Korean Retrieval
-        Benchmark.
-      </p>
+      <ul>
+        <li>
+          <strong>Dense &amp; Multi-Vector:</strong> KURE-v1 and KURE-v2 both ranked 1st on the leaderboard (as of Aug. 2025 and Oct. 2026,
+          respectively), and KURE-v1 passed 3M downloads. KURE-v2, a multi-vector model, outperforms 8B dense models while being 50× smaller, and the
+          newest KURE-v3 outperforms Qwen3-Embedding-8B while being 7× smaller.
+        </li>
+        <li><strong>Sparse:</strong> KURE-Sparse-{base, nano}, state of the art in Korean sparse retrieval overall and under 0.5B parameters.</li>
+        <li><strong>Reranker:</strong> KURE-Reranker-{base, nano}, state of the art in Korean reranking under 4B and 1B parameters.</li>
+      </ul>
 
       {% comment %}
         PreRanker — hidden for now
@@ -129,7 +132,7 @@ layout: default
 
       <p>
         <strong>URACLE–Korea University Collaborative Research</strong><br>
-        Trained a Korean–English cross-lingual retriever and analyzed language-pair trade-offs; used model merging to recover monolingual retrieval
+        Trained a Korean–English cross-lingual retriever and analyzed language-pair trade-offs. Used model merging to recover monolingual retrieval
         while retaining cross-lingual retrieval gains. Published in the ACL 2026 MeLLM Workshop.
       </p>
 
@@ -140,7 +143,7 @@ layout: default
           target="_blank"
           >News</a
         >)<br>
-        Developed an end-to-end training recipe for a Korean legal-domain LLM, published as LEGALMIDM (ICLR 2026 Data-FM Workshop); contributed to
+        Developed an end-to-end training recipe for a Korean legal-domain LLM, published as LEGALMIDM (ICLR 2026 Data-FM Workshop). Contributed to
         KT's $10.42M contract for the South Korean Supreme Court AI platform.
       </p>
     </div>
@@ -170,6 +173,10 @@ layout: default
         <li>
           Implemented CachedSpladeLoss for gradient-cache compatible, memory-efficient SPLADE training.
           <a href="https://github.com/huggingface/sentence-transformers/pull/3670" target="_blank">[PR #3670]</a>
+        </li>
+        <li>
+          Added mergekit-based model merging for dense, sparse, and cross-encoder models.
+          <a href="https://github.com/huggingface/sentence-transformers/pull/3776" target="_blank">[PR #3776]</a>
         </li>
       </ul>
       <div style="display: flex; justify-content: space-between; align-items: baseline; flex-wrap: wrap; gap: 0.5rem;">

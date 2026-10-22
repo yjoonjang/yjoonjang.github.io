@@ -11,6 +11,7 @@ category: open-source
 - Extended the cross-encoder training stack with classic learning-to-rank losses (Position-Aware ListMLELoss, RankNetLoss). [[PR#6](https://github.com/tomaarsen/sentence-transformers/pull/6)] [[PR#7](https://github.com/tomaarsen/sentence-transformers/pull/7)]
 - Introduced hardness-weighted contrastive learning to up-weight informative hard negatives. [[PR#3667](https://github.com/huggingface/sentence-transformers/pull/3667)]
 - Implemented CachedSpladeLoss for gradient-cache compatible, memory-efficient SPLADE training (4-16x larger batch sizes, 36-41% lower GPU memory). [[PR#3670](https://github.com/huggingface/sentence-transformers/pull/3670)]
+- Added mergekit-based model merging for dense, sparse, and cross-encoder models. [[PR#3776](https://github.com/huggingface/sentence-transformers/pull/3776)]
 
 ### MTEB (2024-2025)
 

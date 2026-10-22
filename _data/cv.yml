@@ -78,6 +78,7 @@ cv:
           - "Implemented EmbedDistillLoss for direct embedding-level knowledge distillation (PR #3665)."
           - "Introduced hardness-weighted contrastive learning to up-weight informative hard negatives (PR #3667)."
           - "Implemented CachedSpladeLoss for gradient-cache compatible, memory-efficient SPLADE training (PR #3670)."
+          - "Added mergekit-based model merging for dense, sparse, and cross-encoder models (PR #3776)."
       - name: "MTEB (Massive Text Embeddings Benchmark)"
         start_date: 2024
         end_date: 2025
@@ -99,15 +100,13 @@ cv:
           - "Led the data team; built a query clarity evaluation framework with engineered GPT-5.2 prompts and a Qwen3-4B tagger."
           - "Established a response filtering pipeline ensembling three reward models with score fusion."
           - "Curated large-scale alignment samples using LLM-as-a-judge and code-execution metrics."
-      - name: "KURE: Korea University Retrieval Embedding Model"
+      - name: "KURE: Korea University Retrieval Models"
+        start_date: 2024
         highlights:
-          - "Led the lab's flagship Korean retrieval project; trained a SOTA dense retriever (1st on MTEB-ko-retrieval, Aug. 2025)."
-          - "Designed and maintained MTEB-ko-retrieval, a standardized public Korean IR leaderboard."
-          - "Open-sourced the framework: 200+ GitHub stars and 2.3M+ cumulative Hugging Face downloads (Best Oral, HCLT 2025)."
-      - name: "Korean Sparse & Multi-Vector Retrievers"
-        highlights:
-          - "Trained and open-sourced Korean Sparse and Multi-Vector models achieving SOTA among corresponding architectures (Feb. 2026)."
-          - "Provided optimized, reproducible pipelines advancing dense-sparse hybrid retrieval experiments."
+          - "Led the lab's flagship Korean-English retrieval project, built the MTEB-Ko-Retrieval Leaderboard, and open-sourced the model family and training/evaluation code (250+ GitHub stars)."
+          - "Dense & Multi-Vector: KURE-v1 and KURE-v2 both ranked 1st on the leaderboard (Aug. 2025 and Oct. 2026). KURE-v1 surpassed 3M downloads, KURE-v2, a multi-vector model, outperforms 8B dense models while being 50x smaller, and KURE-v3 outperforms Qwen3-Embedding-8B while being 7x smaller."
+          - "Sparse: KURE-Sparse-{base, nano}, state-of-the-art Korean sparse retrieval overall and under 0.5B parameters. The base model also outperforms 8B dense models."
+          - "Reranker: KURE-Reranker-{base, nano}, state-of-the-art Korean reranking under 4B and 1B parameters. The 149M nano runs at 19.5x the throughput of Qwen3-Reranker-4B with a 1.5-point nDCG@10 gap."
       - name: "ReviewSearch"
         highlights:
           - "Built and deployed a search engine over 205,988 real peer reviews and rebuttals for agents, so that a rebuttal draft is grounded in real precedent."
@@ -123,7 +122,7 @@ cv:
           - "Built a lightweight reranker to narrow candidate tools, reducing tool-call scope for LLM agents."
       - name: "URACLE–Korea University Collaborative Research"
         highlights:
-          - "Trained a Korean–English cross-lingual retriever; used model merging to recover mono-lingual retrieval while retaining CLIR gains."
+          - "Trained a Korean–English cross-lingual retriever. Used model merging to recover mono-lingual retrieval while retaining CLIR gains."
 
     Skills:
       - name: "Languages"

@@ -12,6 +12,7 @@ nav: false
 - Implemented `EmbedDistillLoss` to support direct embedding-level knowledge distillation. [[PR #3665](https://github.com/huggingface/sentence-transformers/pull/3665)]
 - Introduced hardness-weighted contrastive learning to up-weight informative hard negatives. [[PR #3667](https://github.com/huggingface/sentence-transformers/pull/3667)]
 - Implemented `CachedSpladeLoss` for gradient-cache compatible, memory-efficient SPLADE training. [[PR #3670](https://github.com/huggingface/sentence-transformers/pull/3670)]
+- Added mergekit-based model merging for dense, sparse, and cross-encoder models. [[PR #3776](https://github.com/huggingface/sentence-transformers/pull/3776)]
 
 ---
 

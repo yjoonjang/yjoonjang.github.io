@@ -6,7 +6,13 @@
 
 body {
   padding-bottom: 70px;
-  font-size: 1.16rem;
+  font-family:
+    "IBM Plex Sans",
+    -apple-system,
+    BlinkMacSystemFont,
+    "Segoe UI",
+    sans-serif;
+  font-size: 1.08rem;
   color: var(--global-text-color);
   background-color: var(--global-bg-color);
 
@@ -61,3 +67,14 @@ body.sticky-bottom-footer {
 *****************************************************************************/
 
 // TODO: redefine projects layout.
+
+// Bootstrap gives tooltips and popovers their own system font stack.
+.tooltip,
+.popover {
+  font-family:
+    "IBM Plex Sans",
+    -apple-system,
+    BlinkMacSystemFont,
+    "Segoe UI",
+    sans-serif;
+}
